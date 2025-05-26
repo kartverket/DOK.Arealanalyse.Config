@@ -1,0 +1,40 @@
+---
+
+type: dataset
+config_id: 16db1de1-911a-4cb3-a3f7-dea37c230280
+name: skredhendelser
+
+metadata_id: de19fbbf-3734-47a0-89f5-6c5769071cdd
+wfs: https://wfs.geonorge.no/skwms1/wfs.skredhendelser
+wms: https://nve.geodataonline.no/arcgis/services/SkredHendelser/MapServer/WMSServer
+layers:
+- wfs: SkredObsHistorisk
+  wms:
+  - Skredtype
+  result_status: HIT-RED
+geom_field: posisjon  
+properties:
+- stedsnavn
+- skredType
+- skredTidspunkt
+- utløsningÅrsak
+themes:
+- natur
+---
+
+type: quality
+config_id: 16db1de1-911a-4cb3-a3f7-dea37c230280
+
+indicators:
+- type: coverage
+  quality_dimension_id: fullstendighet_dekning
+  quality_dimension_name: Fullstendighetsdekning
+  quality_warning_text: Området er ikke kartlagt for skredhendelser
+  warning_threshold: Ikke kartlagt
+  gpkg:
+    url: file:///mnt/dokanalyse/geopackage/dekningskart_nve_skredhendelser.gpkg
+    property: dekningsstatus
+    properties:
+    - dataeier
+    - dekningsstatus
+    - dekningsinfo

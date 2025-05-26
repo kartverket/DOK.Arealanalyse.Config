@@ -23,3 +23,21 @@ properties:
 - forvaltningsmyndighet
 themes:
 - natur
+---
+
+type: quality
+config_id: 52c83a47-8a84-4962-839f-87418c124262
+
+indicators:
+- type: coverage
+  quality_dimension_id: fullstendighet_dekning
+  quality_dimension_name: Fullstendighetsdekning
+  quality_warning_text: Området er ikke kartlagt for naturvernområder
+  warning_threshold: Ikke kartlagt
+  gpkg:
+    url: file:///mnt/dokanalyse/geopackage/dekningskart_mdir_naturvernomrader.gpkg
+    property: dekningsstatus
+    properties:
+    - dataeier
+    - dekningsstatus
+    - dekningsinfo
