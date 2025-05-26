@@ -33,7 +33,7 @@ indicators:
   quality_warning_text: Området er ikke kartlagt for markagrensen
   warning_threshold: Ikke kartlagt
   geojson:
-    url: file:///home/toranders/dev/dokanalyse/geojson/dekningskart_kld_markagrensen.geojson
+    url: file:///mnt/dokanalyse/geojson/dekningskart_kld_markagrensen.geojson
     property: dekningsstatus
     properties:
     - dataeier

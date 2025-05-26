@@ -35,7 +35,7 @@ indicators:
   quality_warning_text: Området er ikke kartlagt for flomsoner
   warning_threshold: Ikke kartlagt
   gpkg:
-    url: file:///home/toranders/dev/dokanalyse/geopackage/dekningskart_nve_flomsoner.gpkg
+    url: file:///mnt/dokanalyse/geopackage/dekningskart_nve_flomsoner.gpkg
     property: dekningsstatus
     properties:
     - dataeier
