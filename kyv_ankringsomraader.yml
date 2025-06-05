@@ -1,0 +1,27 @@
+---
+type: dataset
+config_id: d6a20e09-fa68-4d57-ab43-c22e755ff60a
+name: ankringsomraader
+
+metadata_id: d6a20e09-fa68-4d57-ab43-c22e755ff60a
+wfs: https://services.kystverket.no/wfs.ashx
+wms: https://services.kystverket.no/wms.ashx
+layers:
+- wfs: layer_151
+  wms:
+  - group_2
+  result_status: HIT-RED
+  planning_guidance_id: 023c6d84-3088-45a3-a267-04beae5d0906
+geom_field: msGeometry
+properties:
+- navn
+- ankring_id
+- ankringstype
+- ankringsklasse
+- kyv_region
+- informasjon
+themes:
+- Kyst og fiskeri
+---
+
+
