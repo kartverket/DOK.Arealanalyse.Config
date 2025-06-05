@@ -1,0 +1,39 @@
+---
+type: dataset
+config_id: fabfe189-06b5-4a3f-84ba-3c48b02ce6de
+name: fiskerihavn
+
+metadata_id: fabfe189-06b5-4a3f-84ba-3c48b02ce6de
+wfs: https://services.kystverket.no/wfs.ashx
+wms: https://services.kystverket.no/wms.ashx
+layers:
+- wfs: layer_503
+  wms:
+  - group_3
+  result_status: HIT-RED
+  planning_guidance_id: a9a80fba-5462-4fb5-93c9-16d282e0c84a
+geom_field: lokalisering
+properties:
+- driftsenhetsnavn
+- kulturvernstatus
+- askeladdenid
+themes:
+- Kyst og fiskeri
+---
+
+type: quality
+config_id: fabfe189-06b5-4a3f-84ba-3c48b02ce6de
+
+indicators:
+- type: coverage
+  quality_dimension_id: fullstendighet_dekning
+  quality_dimension_name: Fullstendighetsdekning
+  quality_warning_text: Området er ikke kartlagt for fiskerihavn.
+  warning_threshold: Ikke kartlagt
+  gpkg:
+    url: https://testnedlasting.geonorge.no/geonorge/Basisdata/DOKFullstendighetsdekningskart/GPKG/Dekning_fiskerihavner.gpkg
+    property: dekningsstatus
+    properties:
+    - dataeier
+    - dekningsstatus
+    - dekningsinfo
