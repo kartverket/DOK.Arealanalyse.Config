@@ -2,6 +2,7 @@
 type: dataset
 config_id: fabfe189-06b5-4a3f-84ba-3c48b02ce6de
 name: fiskerihavn
+disabled: true
 
 metadata_id: fabfe189-06b5-4a3f-84ba-3c48b02ce6de
 wfs: https://services.kystverket.no/wfs.ashx
