@@ -1,6 +1,7 @@
 ---
+
 type: dataset
-config_id: d6a20e09-fa68-4d57-ab43-c22e755ff60a
+config_id: 8cb6a3d2-5861-44a9-956b-a27c5b6a3f23
 name: ankringsomraader
 disabled: true
 
@@ -22,7 +23,7 @@ properties:
 - kyv_region
 - informasjon
 themes:
-- Kyst og fiskeri
+- kyst og fiskeri
 ---
 
 
