@@ -1,0 +1,25 @@
+---
+
+type: dataset
+config_id: 5deb14e7-5437-4ada-9cb7-a58423ae5539
+name: skisesong_referanseperiode_1991-2020_minst60dager
+
+metadata_id: 073b334a-5778-46b4-906d-d28427821ecd
+wfs: https://test-gisapp.nve.no/arcgis/services/featureservice/KSS_sno_klimaframskrivninger/MapServer/WFSServer
+wms: https://gridwms.nve.no/wms_server/wms_server.aspx
+layers:
+- wfs: skisesong_referanseperiode_1991_2020
+  wms:
+  - swexyr30yr_19912020
+  filter: label IN ['60 - 90','90 - 120','120 - 150','150 - 180','180 - 210','210 - 240','> 240']
+  result_status: HIT-YELLOW
+  planning_guidance_id: 44ef4297-d5a5-4fab-9db3-d67429d7a5f0
+  #https://register.geonorge.no/geolett/1119/ - valgt en annen publisert for å teste
+geom_field: Shape
+properties:
+- label
+- min_value
+- max_value
+themes:
+- klima
+---
