@@ -1,0 +1,25 @@
+---
+
+type: dataset
+config_id: 980845a0-35ee-4197-9737-4a3ebccfc976
+name: skisesong_referanseperiode_1991-2020_færreskidager
+
+metadata_id: 073b334a-5778-46b4-906d-d28427821ecd
+wfs: https://test-gisapp.nve.no/arcgis/services/featureservice/KSS_sno_klimaframskrivninger/MapServer/WFSServer
+wms: https://test-gisapp.nve.no/arcgis/services/featureservice/KSS_sno_klimaframskrivninger/MapServer/WMSServer
+layers:
+- wfs: skisesong_referanseperiode_1991_2020
+  wms:
+  - skisesong_referanseperiode_1991_2020
+  filter: label IN ['0 - 30','30 - 60']
+  result_status: HIT-YELLOW
+  planning_guidance_id: 44ef4297-d5a5-4fab-9db3-d67429d7a5f0
+  #https://register.geonorge.no/geolett/1118/ - valgt en annen publisert for å teste siden url her er ikke publisert
+geom_field: Shape
+properties:
+- label
+- min_value
+- max_value
+themes:
+- klima
+---

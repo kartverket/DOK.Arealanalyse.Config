@@ -1,0 +1,25 @@
+---
+
+type: dataset
+config_id: e90ad5c2-cd90-462e-a795-15affbfc3dd5
+name: klimapåslag_vassdrag
+
+metadata_id: 073b334a-5778-46b4-906d-d28427821ecd
+wfs: https://test-gisapp.nve.no/arcgis/services/Mapservices/klimapaslag/MapServer/WFSServer
+wms: https://test-gisapp.nve.no/arcgis/services/Mapservices/klimapaslag/MapServer/WMSServer
+layers:
+- wfs: Klimapåslag
+  wms:
+  - Klimapåslag
+  filter: kps IN ['20','40']
+  result_status: HIT-YELLOW
+  planning_guidance_id: 44ef4297-d5a5-4fab-9db3-d67429d7a5f0
+  #https://register.geonorge.no/geolett/1120/ - valgt en annen publisert for å teste siden url her er ikke publisert
+geom_field: Shape
+properties:
+- grid_code
+- kps
+- vassdragsOmr
+themes:
+- klima
+---
