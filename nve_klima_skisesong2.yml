@@ -2,15 +2,15 @@
 
 type: dataset
 config_id: 980845a0-35ee-4197-9737-4a3ebccfc976
-name: skisesong_referanseperiode_1991-2020_færreskidager
+name: skisesong_framtidsperiode_2071_2100_færreskidager
 
 metadata_id: 073b334a-5778-46b4-906d-d28427821ecd
 wfs: https://test-gisapp.nve.no/arcgis/services/featureservice/KSS_sno_klimaframskrivninger/MapServer/WFSServer
 wms: https://test-gisapp.nve.no/arcgis/services/featureservice/KSS_sno_klimaframskrivninger/MapServer/WMSServer
 layers:
-- wfs: skisesong_referanseperiode_1991_2020
+- wfs: skisesong_framtidsperiode_2071_2100
   wms:
-  - skisesong_referanseperiode_1991_2020
+  - skisesong_framtidsperiode_2071_2100
   filter: label IN ['0 - 30','30 - 60']
   result_status: HIT-YELLOW
   planning_guidance_id: 44ef4297-d5a5-4fab-9db3-d67429d7a5f0
