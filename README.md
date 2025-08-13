@@ -165,6 +165,21 @@ indicators:
     - Prosjektrapport
 ```
 
+```yml
+- type: coverage
+  quality_dimension_id: fullstendighet_dekning
+  quality_dimension_name: Fullstendighetsdekning
+  quality_warning_text: Området er ikke kartlagt for flomsoner
+  warning_threshold: Ikke kartlagt
+  gpkg:
+    url: file:///mnt/dokanalyse/geopackage/dekningskart_nve_flomsoner.gpkg
+    property: dekningsstatus
+    properties:
+    - dataeier
+    - dekningsstatus
+    - dekningsinfo
+```
+
 ### Deaktivering av enkelte konfigurasjoner: 
 De kan være påbegynt men ikke komplette eller inneholde feil i tjenester som gjør at en ønsker å deaktivere de for en kortere eller lengre periode uten at de slettes.
 ```yml
