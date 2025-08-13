@@ -10,11 +10,9 @@ wms: https://test-gisapp.nve.no/arcgis/services/featureservice/KSS_sno_klimafram
 layers:
 - wfs: skisesong_framtidsperiode_2071_2100
   wms:
-  - skisesong_framtidsperiode_2071_2100
-  filter: label IN ['0 - 30','30 - 60']
+  - '0'
+  filter: label IN ['0 - 30', '30 - 60']
   result_status: HIT-YELLOW
-  planning_guidance_id: 44ef4297-d5a5-4fab-9db3-d67429d7a5f0
-  #https://register.geonorge.no/geolett/1118/ - valgt en annen publisert for å teste siden url her er ikke publisert
 geom_field: Shape
 properties:
 - label
@@ -22,4 +20,3 @@ properties:
 - max_value
 themes:
 - klima
----

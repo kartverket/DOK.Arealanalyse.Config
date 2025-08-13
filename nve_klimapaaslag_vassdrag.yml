@@ -11,10 +11,8 @@ layers:
 - wfs: Klimapåslag
   wms:
   - Klimapåslag
-  filter: kps IN ['20','40']
+  filter: kps IN ['20', '40']
   result_status: HIT-YELLOW
-  planning_guidance_id: 44ef4297-d5a5-4fab-9db3-d67429d7a5f0
-  #https://register.geonorge.no/geolett/1120/ - valgt en annen publisert for å teste siden url her er ikke publisert
 geom_field: Shape
 properties:
 - grid_code
@@ -22,4 +20,4 @@ properties:
 - vassdragsOmr
 themes:
 - klima
----
+
