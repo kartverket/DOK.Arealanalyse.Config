@@ -3,6 +3,7 @@
 type: dataset
 config_id: 8cb6a3d2-5861-44a9-956b-a27c5b6a3f23
 name: ankringsomraader
+disabled: true
 
 metadata_id: d6a20e09-fa68-4d57-ab43-c22e755ff60a
 wfs: https://services.kystverket.no/wfs.ashx

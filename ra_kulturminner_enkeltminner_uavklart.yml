@@ -5,7 +5,7 @@ config_id: 9508dae0-0024-43e3-af62-866f9073a2b0
 name: kulturminner_enkeltminner_iuav
 
 metadata_id: c72906a0-2bc2-41d7-bea2-c92d368e3c49
-ogc_api: https://api.ra.no/LokaliteterEnkeltminnerOgSikringssoner/collections
+ogc_api: https://api.ra.no/LokaliteterEnkeltminnerOgSikringssoner
 wms: https://kart.ra.no/wms/kulturminner
 layers:
 - ogc_api: enkeltminner

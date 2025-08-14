@@ -6,7 +6,7 @@ name: geoteknisk_borehull
 title: Geoteknisk borehull
 
 metadata_id: bf45a463-434d-4b4d-84dc-9325780ab5fb
-ogc_api: https://ogcapitest.ngu.no/rest/services/grunnundersokelser_utvidet/collections
+ogc_api: https://ogcapitest.ngu.no/rest/services/grunnundersokelser_utvidet
 wms: https://geo.ngu.no/geoserver/nadag/ows
 layers:
 - ogc_api: geotekniskborehull

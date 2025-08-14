@@ -5,7 +5,7 @@ config_id: 55747d23-8ced-47ee-811f-6bc396bfaf09
 name: kulturminner_enkeltminner_fje
 
 metadata_id: c72906a0-2bc2-41d7-bea2-c92d368e3c49
-ogc_api: https://api.ra.no/LokaliteterEnkeltminnerOgSikringssoner/collections
+ogc_api: https://api.ra.no/LokaliteterEnkeltminnerOgSikringssoner
 wms: https://kart.ra.no/wms/kulturminner
 layers:
 - ogc_api: enkeltminner
