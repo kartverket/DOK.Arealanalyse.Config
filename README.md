@@ -129,6 +129,9 @@ layers:
 ```
 
 ### Kvalitetsinformasjon:
+Det er flere dimmensjoner på kvalitet som kan vises og det er lagt opp til noen felles slik som egnethet fra DOK som ligger under common.yaml. Kvalitet kan hentes fra datasett nivå eller fra hvert enkelt objekt.
+property og warning_threshold brukes for å få fram advarsler som henter tekst fra quality_warning_text.
+Underlag og inndeling av [kvalitetsinformasjon](https://standarder.geonorge.no/sosi/standarder-geografisk-informasjon/geodatakvalitet/1.0/geodatakvalitet-10-standarder-geografisk-informasjon.pdf) i kategoriene fullstendighet, egenskapskvalitet, logisk konsistens, Kvalitet på tidfesting, stedfestingsnøyaktighet og egnethet.
 
 ```yml
 ---
@@ -193,6 +196,15 @@ indicators:
     - dataeier
     - dekningsstatus
     - dekningsinfo
+```
+
+```yml
+- type: dataset
+  quality_dimension_id: egnethet_byggesak
+  quality_dimension_name: Byggesak
+  quality_warning_text: Datasettet er lite egnet for byggesak
+  warning_threshold: 1 OR 2
+  input_filter: context = 'Byggesak'
 ```
 
 ### Deaktivering av enkelte konfigurasjoner: 
