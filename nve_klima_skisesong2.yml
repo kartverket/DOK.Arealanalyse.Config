@@ -11,7 +11,7 @@ layers:
 - wfs: skisesong_framtidsperiode_2071_2100
   wms:
   - '0'
-  filter: label IN ['0 - 30', '30 - 60']
+  filter: label IN ['< -90', '-90 - -60']
   result_status: HIT-YELLOW
   planning_guidance_id: 85b79a57-9a9d-4cd0-b9fd-61d5e5659b77
 geom_field: Shape
