@@ -13,6 +13,7 @@ layers:
   - Klimapåslag
   filter: kps IN ['20', '40']
   result_status: HIT-YELLOW
+  planning_guidance_id: edc62a80-9f7b-4bda-a9b5-31c4044a1a89
 geom_field: Shape
 properties:
 - grid_code
