@@ -6,12 +6,12 @@ name: klimapåslag_vassdrag
 disabled: true
 
 metadata_id: 073b334a-5778-46b4-906d-d28427821ecd
-wfs: https://test-gisapp.nve.no/arcgis/services/Mapservices/klimapaslag/MapServer/WFSServer
-wms: https://test-gisapp.nve.no/arcgis/services/Mapservices/klimapaslag/MapServer/WMSServer
+wfs: https://test-gisapp.nve.no/arcgis/services/featureservice/klimapaslag/MapServer/WFSServer
+wms: https://test-gisapp.nve.no/arcgis/services/featureservice/klimapaslag/MapServer/WMSServer
 layers:
-- wfs: Klimapåslag
+- wfs: Klimapaslag
   wms:
-  - Klimapåslag
+  - Klimapaslag
   filter: kps IN ['20', '40']
   result_status: HIT-YELLOW
   planning_guidance_id: edc62a80-9f7b-4bda-a9b5-31c4044a1a89
