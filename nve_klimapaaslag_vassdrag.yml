@@ -3,6 +3,7 @@
 type: dataset
 config_id: e90ad5c2-cd90-462e-a795-15affbfc3dd5
 name: klimapåslag_vassdrag
+disabled: true
 
 metadata_id: 073b334a-5778-46b4-906d-d28427821ecd
 wfs: https://test-gisapp.nve.no/arcgis/services/Mapservices/klimapaslag/MapServer/WFSServer
