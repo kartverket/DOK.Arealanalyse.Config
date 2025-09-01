@@ -1,0 +1,31 @@
+---
+
+type: dataset
+config_id: 3950c3f5-ecc5-4c64-9c24-5b985bc5c9d5
+name: bergrettigheter_utvinningsrett
+
+metadata_id: b3c319bd-910d-4663-8ce8-23a246afe879
+wfs: https://wfs.geonorge.no/skwms1/wfs.bergrettigheter
+wms: https://kart.dirmin.no/dirmin/services/Bergrettigheter/MapServer/WmsServer
+layers:
+- wfs: Bergrettighet
+  wms:
+  - Bergrettigheter
+  filter: servituttType = 'UT'
+  result_status: HIT-RED
+  planning_guidance_id: e8f6ddba-b4b3-461b-92fc-5a9250a3debe
+geom_field: område
+properties:
+- servituttType
+- rettighetNr
+- rettighetNavn
+- rettighetHaver
+- utstedtDato
+- forlengetTilDato
+- forfallsDato
+- oppdateringsdato
+- datauttaksdato
+- opphav
+themes:
+- geologi
+---
