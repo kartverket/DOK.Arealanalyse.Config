@@ -115,7 +115,7 @@ themes:
 - samfunnssikkerhet
 ```
 ### Veiledningstekster: 
-Det angis referanse til ID på aktuell veiledningstekst fra https://register.geonorge.no/geolett/
+Det angis referanse til ID på aktuell veiledningstekst fra https://register.geonorge.no/geolett/. guid som vist i eksempel viser til oppslag på denne id i API for Veiledningsregister https://register.geonorge.no/geolett/api/. guid 9d803106-57f6-494e-bca8-67f1fd1f72a3 vil hente veiledningstekst fra Naturtypelokalitet, svært stor verdi - https://register.geonorge.no/geolett/1071/ 
 - planning_guidance_id er id til veiledningstekst for bruksområdet plan
 - building_guidance_id er id til veiledningstekst for bruksområdet bygg 
 
