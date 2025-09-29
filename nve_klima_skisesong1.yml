@@ -3,6 +3,7 @@
 type: dataset
 config_id: 5deb14e7-5437-4ada-9cb7-a58423ae5539
 name: skisesong_referanseperiode_1991-2020_minst60dager
+disabled: true
 
 metadata_id: 073b334a-5778-46b4-906d-d28427821ecd
 wfs: https://test-gisapp.nve.no/arcgis/services/featureservice/KSS_sno_klimaframskrivninger/MapServer/WFSServer
