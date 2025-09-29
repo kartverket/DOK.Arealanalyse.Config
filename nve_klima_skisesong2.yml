@@ -3,6 +3,7 @@
 type: dataset
 config_id: 980845a0-35ee-4197-9737-4a3ebccfc976
 name: skisesong_framtidsperiode_2071_2100_færreskidager
+disabled: true
 
 metadata_id: 073b334a-5778-46b4-906d-d28427821ecd
 wfs: https://test-gisapp.nve.no/arcgis/services/featureservice/KSS_sno_klimaframskrivninger/MapServer/WFSServer
