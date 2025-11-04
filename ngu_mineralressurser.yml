@@ -1,0 +1,19 @@
+---
+type: dataset
+config_id: 63d41e1b-5d9c-48f6-a1c0-71d5cdfba6e5
+name: Mineralressurser
+disabled: true
+
+metadata_id: 5a887d78-07ef-44c6-8941-cb8017c6328c
+# vektor: mangler offentlig WFS/OGC API. Når NGU åpner for uttrekk, sett wfs/ogc_api her.
+wms: 
+layers:
+- wms:
+  - 
+  result_status: HIT-RED
+  planning_guidance_id: 63d41e1b-5d9c-48f6-a1c0-71d5cdfba6e5
+geom_field: <fyll inn når vektor finnes>
+properties:
+# legg til attributter (f.eks. navn, verdivurdering) så snart vektor er tilgjengelig
+themes:
+- geologi

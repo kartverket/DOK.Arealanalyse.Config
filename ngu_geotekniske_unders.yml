@@ -1,0 +1,25 @@
+---
+
+type: dataset
+config_id: 727e5e04-f403-4907-8644-ffcd68f3544c
+name: Geotekniske undersøkelser
+title: Geotekniske undersøkelser
+
+metadata_id: bf45a463-434d-4b4d-84dc-9325780ab5fb
+ogc_api: https://ogcapitest.ngu.no/rest/services/grunnundersokelser_utvidet
+wms: https://geo.ngu.no/geoserver/nadag/ows
+layers:
+- ogc_api: geotekniskunders
+  wms:
+  - GB_filter_komplette_data
+  result_status: HIT-YELLOW
+  planning_guidance_id: d94aa120-ab59-4814-bb28-585c3c3c06f0
+geom_field: geometry
+properties:
+- prosjektNavn
+- oppdragsgiver
+- beskrivelse
+- prosjektNr
+- opphav
+themes:
+- geologi

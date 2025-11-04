@@ -1,0 +1,20 @@
+---
+type: dataset
+config_id: 7e7686c3-114e-4398-bfaf-a5f4f3faeb25
+name: Grunnvannspotensiale
+disabled: true
+
+metadata_id: 3de4ddf6-d6b8-4398-8222-f5c47791a757
+# vektor: mangler offentlig WFS/OGC API. Når NGU åpner for uttrekk, sett wfs/ogc_api her.
+wms: https://geo.ngu.no/mapserver/LosmasserWMS2
+layers:
+- wms:
+  - Grunnvannspotensiale
+  - Dekningsomrader_grunnvannspotensial_infiltrasjonspotensial
+  result_status: HIT-RED
+  planning_guidance_id: 7e7686c3-114e-4398-bfaf-a5f4f3faeb25
+geom_field: <fyll inn når vektor finnes>
+properties:
+# legg til attributter (f.eks. navn, verdivurdering) så snart vektor er tilgjengelig
+themes:
+- geologi

@@ -1,0 +1,20 @@
+---
+type: dataset
+config_id: 34dce4d3-d1cc-458c-973e-e45735c07ec8
+name: geologisk_arv
+disabled: true
+
+metadata_id: 52a55a3c-bcd2-44d7-ac21-2f4550161937
+# vektor: mangler offentlig WFS/OGC API. Når NGU åpner for uttrekk, sett wfs/ogc_api her.
+wms: https://geo.ngu.no/mapserver/GeologiskarvWMS2
+layers:
+- wms:
+  - Geosted_punkt_historiske_verneforslag
+  - Geosted_areal_historiske_verneforslag
+  result_status: HIT-RED
+  planning_guidance_id: 34dce4d3-d1cc-458c-973e-e45735c07ec8
+geom_field: <fyll inn når vektor finnes>
+properties:
+# legg til attributter (f.eks. navn, verdivurdering) så snart vektor er tilgjengelig
+themes:
+- geologi
