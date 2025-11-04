@@ -1,0 +1,26 @@
+---
+type: dataset
+config_id: e48e71ac-16fc-4e47-9e7f-c0a4a4bbfad0   # velg gjerne en ny UUID før innlegging
+name: forurenset_grunn
+
+metadata_id: e48e71ac-16fc-4e47-9e7f-c0a4a4bbfad0
+arcgis: https://kart.miljodirektoratet.no/arcgis/rest/services/grunnforurensning2/MapServer
+wms: https://kart.miljodirektoratet.no/arcgis/services/grunnforurensning2/MapServer/WMSServer
+layers:
+- arcgis: '1'                       # forurenset_omrade (polygon)
+  wms:
+  - forurenset_omrade
+  result_status: HIT-RED
+  planning_guidance_id: 4ac9db7f-db1e-47fc-a135-a82d1697adf0
+  building_guidance_id: babb0aec-1a3e-4f74-a0dc-846fbba99118
+geom_field: SHAPE
+properties:
+- Lokalitetnavn
+- Lokalitettype
+- Myndighet
+- Prosesstatus
+- Pavirkningsgrad
+- HelsebasertTilstandsklasse
+- Faktaark
+themes:
+- natur

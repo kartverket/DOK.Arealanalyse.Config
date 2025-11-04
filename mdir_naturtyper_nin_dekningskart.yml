@@ -1,0 +1,26 @@
+---
+type: dataset
+config_id: eb48dd19-03da-41e1-afd9-7ebc3079265c   # erstatt med ny UUID dersom ønskelig
+name: naturtyper_nin_dekningskart
+
+metadata_id: eb48dd19-03da-41e1-afd9-7ebc3079265c
+arcgis: https://kart.miljodirektoratet.no/arcgis/rest/services/naturtyper_nin/MapServer
+wms: https://kart.miljodirektoratet.no/arcgis/services/naturtyper_nin/MapServer/WMSServer
+layers:
+- arcgis: '1'                       # dekningskart_naturtyper_nin
+  wms:
+  - dekningskart_naturtyper_nin
+  result_status: HIT-YELLOW
+  planning_guidance_id: 0685b79a-76a8-439a-8793-6dc31a0a9099
+  building_guidance_id: 45ece8ff-e382-4c40-b469-045e2939f554
+geom_field: SHAPE
+properties:
+- Prosjektnavn
+- Ǻrstall
+- Oppdragsgiver
+- Oppdragstaker
+- Kartleggingsinstruks
+- Dekningskartverdi
+- Prosjektrapport
+themes:
+- natur
