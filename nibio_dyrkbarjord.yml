@@ -3,6 +3,7 @@
 type: dataset
 config_id: 5f847646-4166-40a1-9db5-02a1317922f0
 name: dyrkbarjord
+disabled: true
 
 metadata_id: b3c319bd-910d-4663-8ce8-23a246afe879
 wfs: https://wfs.geonorge.no/skwms1/wfs.bergrettigheter
