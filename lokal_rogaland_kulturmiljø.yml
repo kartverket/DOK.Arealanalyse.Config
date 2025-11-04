@@ -1,0 +1,25 @@
+---
+type: dataset
+config_id: ae53d46a-c2dc-4733-b1e9-2bca06ecbb2c
+name: Kulturmiljø av regional interesse
+disabled: true
+
+metadata_id: 7c373bdd-31dd-4547-9508-761d41d4e112
+wfs: https://kart.temakart-rogaland.no/wfs.ashx
+wms: https://kart.temakart-rogaland.no/wms.ashx
+layers:
+- wfs: layer_digi_128
+  wms:
+  - layer_digi_128
+  result_status: HIT-RED
+geom_field: msGeometry
+properties:
+ - id
+ - namn
+ - tema
+ - kjelde
+ - omfang
+ - vern
+ - lenke
+themes:
+- kulturminner
