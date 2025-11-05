@@ -11,6 +11,9 @@ layers:
 - ogc_api: enkeltminner
   wms:
   - Enkeltminner
+  - Lokaliteter
+  - Sikringssoner
+  - Lokalitetsikoner
   result_status: HIT-RED
   planning_guidance_id: ccf12fba-2931-4a21-a6ce-28f7c188d762
   building_guidance_id: c65f324d-73b1-41ad-bf0f-e24573da1871
