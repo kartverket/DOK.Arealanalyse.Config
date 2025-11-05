@@ -14,7 +14,7 @@ layers:
   - GB_filter_komplette_data
   result_status: HIT-YELLOW
   planning_guidance_id: d94aa120-ab59-4814-bb28-585c3c3c06f0
-geom_field: geometry
+geom_field: område
 properties:
 - prosjektNavn
 - oppdragsgiver
