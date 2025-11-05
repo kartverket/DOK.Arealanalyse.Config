@@ -3,7 +3,7 @@ disabled: true
 
 type: dataset
 name: steinsprang_aktsomhets_omr
-config_id: df4d09fa-86bd-4efa-bbdf-39d5d7e65840
+config_id: 02d12404-6c76-4cc6-b4d3-26b914765f95
 
 metadata_id: 02c6d51c-4e8c-4948-a620-dc046c8cb747 
 arcgis: TODO - har ikke https://nve.geodataonline.no/arcgis/rest/services
