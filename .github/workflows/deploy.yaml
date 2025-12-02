@@ -25,4 +25,4 @@ jobs:
               connection_string: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
               source: .
               destination: ${{ env.DEST_SHARE }}
-              extra_args: "--pattern *.yml --destination-path config"
+              extra_args: '--pattern "*.yml" --destination-path config'
