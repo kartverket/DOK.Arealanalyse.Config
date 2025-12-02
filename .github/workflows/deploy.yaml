@@ -1,0 +1,28 @@
+name: Upload YAML files to Azure Files
+
+on:
+   push:
+      branches:
+         - staging
+      paths:
+         - "*.yml"
+         - "*.yaml"
+   workflow_dispatch:
+
+jobs:
+   upload-yaml:
+      runs-on: ubuntu-latest
+      env:
+         DEST_SHARE: ${{ github.ref_name == 'main' && 'dokanalyse' || 'dokanalyse-staging' }}
+
+      steps:
+         - name: Checkout repo
+           uses: actions/checkout@v4
+
+         - name: Upload YAMLs to Azure File Share
+           uses: rnakamine/azure-files-upload@v1.0.0
+           with:
+              connection_string: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
+              source: .
+              destination: ${{ env.DEST_SHARE }}
+              extra_args: "--pattern *.yml --destination-path config"
