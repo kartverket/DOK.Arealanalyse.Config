@@ -1,0 +1,33 @@
+---
+
+type: dataset
+config_id: 97088cff-d5a9-4328-9e3e-5abfb8dcc918
+name: reguleringsplaner
+
+metadata_id: dac27348-5c2e-4a6a-9497-c4c792108cae
+ogc_api: https://nap.ft-test.dibk.no/services/reguleringsplaner/vn2
+wms: https://nap.ft-test.dibk.no/services/reguleringsplaner/wms
+layers:
+- ogc_api: rpomrade
+  wms:
+  - arealformal_vn2
+  - hensynssoner_vn2
+  - bestemmelsesomrader_vn2
+  - rpjuridisklinje_vn2
+  - rpregulerthoyde_vn2
+  - rpjuridiskpunkt_vn2
+  - rppaskrift_vn2
+  - rpomrade_vn2
+  result_status: HIT-RED
+geom_field: geometry
+properties:
+- kommunenummer
+- planidentifikasjon
+- plannavn
+- plantype
+- planstatus
+- ikrafttredelsesdato
+- vedtakendeligplandato
+- link
+themes:
+- plan
