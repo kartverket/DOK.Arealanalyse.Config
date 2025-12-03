@@ -3,15 +3,16 @@ name: Upload YAML files to Azure Files
 on:
    push:
       branches:
+         - main
          - staging
       paths:
          - "*.yml"
          - "*.yaml"
-   workflow_dispatch:
 
 jobs:
    upload-yaml:
       runs-on: ubuntu-latest
+
       env:
          DEST_SHARE: ${{ github.ref_name == 'main' && 'dokanalyse' || 'dokanalyse-staging' }}
 
@@ -19,10 +20,38 @@ jobs:
          - name: Checkout repo
            uses: actions/checkout@v4
 
-         - name: Upload YAMLs to Azure File Share
-           uses: rnakamine/azure-files-upload@v1.0.0
+         - name: Sync YAMLs to Azure File Share (config folder)
+           uses: azure/cli@v2
+           env:
+              AZURE_STORAGE_CONNECTION_STRING: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
+              DEST_SHARE: ${{ env.DEST_SHARE }}
            with:
-              connection_string: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
-              source: .
-              destination: ${{ env.DEST_SHARE }}
-              extra_args: '--pattern "*.yml" --destination-path config'
+              azcliversion: latest
+              inlineScript: |
+                 echo "Branch: ${GITHUB_REF_NAME}"
+                 echo "Destination share: ${DEST_SHARE}"
+                 echo "Current directory: $(pwd)"
+                 echo "YAML files in repo root:"
+                 ls -1 *.yml || echo "No .yml files found in repo root"
+
+                 echo "Deleting existing *.yml in config/ on share '${DEST_SHARE}'..."
+                 az storage file delete-batch \
+                   --connection-string "$AZURE_STORAGE_CONNECTION_STRING" \
+                   --source "$DEST_SHARE" \
+                   --pattern 'config/*.yml' \
+                   --output none
+
+                 echo "Uploading *.yml from repo root into config/ on share '${DEST_SHARE}'..."
+                 az storage file upload-batch \
+                   --connection-string "$AZURE_STORAGE_CONNECTION_STRING" \
+                   --source . \
+                   --destination "$DEST_SHARE" \
+                   --pattern '*.yml' \
+                   --destination-path config
+
+                 echo "Listing files now in config/ on Azure Files share '${DEST_SHARE}':"
+                 az storage file list \
+                   --connection-string "$AZURE_STORAGE_CONNECTION_STRING" \
+                   --share-name "$DEST_SHARE" \
+                   --path config \
+                   --output table
