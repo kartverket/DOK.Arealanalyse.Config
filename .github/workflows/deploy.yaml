@@ -14,6 +14,9 @@ jobs:
    upload-yaml:
       runs-on: ubuntu-latest
 
+      environment:
+         name: ${{ github.ref_name == 'main' && 'production' || 'staging' }}
+
       env:
          DEST_SHARE: ${{ github.ref_name == 'main' && 'dokanalyse' || 'dokanalyse-staging' }}
 
@@ -30,6 +33,7 @@ jobs:
               azcliversion: latest
               inlineScript: |
                  echo "Branch: ${GITHUB_REF_NAME}"
+                 echo "Environment: ${{ github.ref_name == 'main' && 'production' || 'staging' }}"
                  echo "Destination share: ${DEST_SHARE}"
                  echo "Current directory: $(pwd)"
                  echo "YAML files in repo root:"
