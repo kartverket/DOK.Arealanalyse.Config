@@ -18,7 +18,7 @@ layers:
   - rpjuridiskpunkt_vn2
   - rppaskrift_vn2
   - rpomrade_vn2
-  result_status: HIT-RED
+  result_status: HIT-YELLOW
 geom_field: geometry
 properties:
 - kommunenummer
