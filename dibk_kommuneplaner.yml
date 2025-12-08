@@ -22,7 +22,7 @@ layers:
   - juridiskpunkt_kp
   - kpomrade
   - kppaskrift
-  result_status: HIT-RED
+  result_status: HIT-YELLOW
 geom_field: geometry
 properties:
 - kommunenummer
