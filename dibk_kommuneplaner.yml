@@ -23,6 +23,7 @@ layers:
   - kpomrade
   - kppaskrift
   result_status: HIT-YELLOW
+  planning_guidance_id: 3f6fc10c-d4a8-4d75-8db8-522878b2251c
 geom_field: geometry
 properties:
 - kommunenummer
