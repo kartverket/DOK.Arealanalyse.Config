@@ -5,8 +5,8 @@ config_id: 97088cff-d5a9-4328-9e3e-5abfb8dcc918
 name: reguleringsplaner
 
 metadata_id: dac27348-5c2e-4a6a-9497-c4c792108cae
-ogc_api: https://nap.ft-test.dibk.no/services/reguleringsplaner/vn2
-wms: https://nap.ft-test.dibk.no/services/reguleringsplaner/wms
+ogc_api: https://nap.ft-dev.dibk.no/services/rest/reguleringsplaner/vn2
+wms: https://nap.ft.dibk.no/services/wms/reguleringsplaner
 layers:
 - ogc_api: rpomrade
   wms:
