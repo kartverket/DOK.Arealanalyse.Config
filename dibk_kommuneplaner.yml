@@ -6,7 +6,7 @@ name: kommuneplaner
 
 metadata_id: 41435fda-93ba-48a8-bd56-79a9287b6dad
 ogc_api: https://nap.ft-dev.dibk.no/services/rest/kommuneplaner
-wms: https://nap.ft-test.dibk.no/services/kommuneplaner/wms
+wms: https://nap.ft.dibk.no/services/wms/kommuneplaner
 layers:
 - ogc_api: kpomrade
   wms:
