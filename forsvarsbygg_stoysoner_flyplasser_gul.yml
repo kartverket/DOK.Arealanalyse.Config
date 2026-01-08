@@ -1,0 +1,24 @@
+---
+
+type: dataset
+config_id: f4aa3856-ff68-48ae-a43d-c5c78513301e
+name: stoysoner_forsvarets_flyplasser_gul
+
+metadata_id: ec1541d3-4a56-4095-9bf7-08dcfbb673d1
+wfs: https://wfs.geonorge.no/skwms1/wfs.stoysonerforsvaretsflyplasser
+wms: https://wms.geonorge.no/skwms1/wms.stoysonerforsvaretsflyplasser
+layers:
+- wfs: Støy
+  wms:
+  - stoysonerforsvaretsflyplasser_omraade
+  filter: støysonekategori = 'G'
+  result_status: HIT-YELLOW
+  planning_guidance_id: c6757612-a0d3-466e-8bda-242e744e9d65
+geom_field: område
+properties:
+- støysonekategori
+- støykilde
+- støykildenavn
+- beregnetÅr
+themes:
+- forurensning

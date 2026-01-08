@@ -1,0 +1,25 @@
+---
+
+type: dataset
+config_id: 663c3796-635e-4885-b415-cc13e45bf61a
+name: stoysoner_avinor_lufthavner_rod
+
+metadata_id: 1489f7f8-40c8-4dc4-83b6-bcf277b56506
+wfs: https://wfs.geonorge.no/skwms1/wfs.stoylufthavn
+wms: https://wms.geonorge.no/skwms1/wms.stoylufthavn
+layers:
+- wfs: Støy
+  wms:
+  - stoylufthavn
+  filter: støysonekategori = 'R'
+  result_status: HIT-RED
+  planning_guidance_id: a98dba09-d78c-450e-9d95-57019bdf1958
+geom_field: område
+properties:
+- støysonekategori
+- støykilde
+- støykildenavn
+- støymetode
+- beregnetÅr
+themes:
+- forurensning

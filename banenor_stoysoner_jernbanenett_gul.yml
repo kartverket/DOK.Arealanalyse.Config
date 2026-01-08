@@ -1,0 +1,25 @@
+---
+
+type: dataset
+config_id: 39d0c3ce-0218-4f0a-b377-baebfb1156a0
+name: stoysoner_jernbanenett_gul
+
+metadata_id: 47234f63-a9d1-43c7-b91c-db90c92d5008
+wfs: https://wfs.geonorge.no/skwms1/wfs.stoysonerjernbanenett
+wms: https://wms.geonorge.no/skwms1/wms.stoysonerjernbanenett
+layers:
+- wfs: Støy
+  wms:
+  - stoy
+  filter: støysonekategori = 'G'
+  result_status: HIT-YELLOW
+  planning_guidance_id: d56b7f73-ba73-4e89-a865-31c4c0c3d05d
+geom_field: område
+properties:
+- støysonekategori
+- støykilde
+- støykildenavn
+- støymetode
+- beregnetÅr
+themes:
+- forurensning

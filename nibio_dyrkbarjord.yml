@@ -5,28 +5,22 @@ config_id: 5f847646-4166-40a1-9db5-02a1317922f0
 name: dyrkbarjord
 disabled: true
 
-metadata_id: b3c319bd-910d-4663-8ce8-23a246afe879
-wfs: https://wfs.geonorge.no/skwms1/wfs.bergrettigheter
+metadata_id: 8252baea-5bad-428b-8f18-fe236fa4ced6
+wfs: https://wfs.nibio.no/cgi-bin/dyrkbarjord
 wms: https://wms.nibio.no/cgi-bin/dyrkbarjord
 layers:
-- wfs: Bergrettighet
+- wfs: Dyrkbarjord
   wms:
   - dyrkbarjord
-  filter: servituttType = 'UN'
   result_status: HIT-RED
   planning_guidance_id: 9bcc357d-6406-4885-98ca-2ff4ea13ff0e
-geom_field: område
+geom_field: msGeometry
 properties:
-- servituttType
-- rettighetNr
-- rettighetNavn
-- rettighetHaver
-- utstedtDato
-- forlengetTilDato
-- forfallsDato
-- oppdateringsdato
-- datauttaksdato
-- opphav
+- dyrkbarjord
+- lokalid
+- endretetter2008
+- informasjon
+- komid
 themes:
 - geologi
 ---

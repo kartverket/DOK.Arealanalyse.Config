@@ -1,0 +1,25 @@
+---
+
+type: dataset
+config_id: a25ad57c-a636-4136-a000-5b6f88219b83
+name: stoysoner_jernbanenett_rod
+
+metadata_id: 47234f63-a9d1-43c7-b91c-db90c92d5008
+wfs: https://wfs.geonorge.no/skwms1/wfs.stoysonerjernbanenett
+wms: https://wms.geonorge.no/skwms1/wms.stoysonerjernbanenett
+layers:
+- wfs: Støy
+  wms:
+  - stoy
+  filter: støysonekategori = 'R'
+  result_status: HIT-RED
+  planning_guidance_id: f270a744-eff7-4bfe-bd90-c0b0cae4dca5
+geom_field: område
+properties:
+- støysonekategori
+- støykilde
+- støykildenavn
+- støymetode
+- beregnetÅr
+themes:
+- forurensning

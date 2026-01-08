@@ -1,0 +1,25 @@
+---
+
+type: dataset
+config_id: 7ab5de22-194e-487b-95df-544fe89beb2b
+name: stoykartlegging_veg_t1442_rod
+
+metadata_id: d6db9f39-9725-4630-909e-5e62f09a0766
+wfs: https://www.vegvesen.no/kart/ogc/norstoy_1_0/ows
+wms: https://www.vegvesen.no/kart/ogc/norstoy_1_0/ows
+layers:
+- wfs: Stoyvarselkart
+  wms:
+  - Stoyvarselkart
+  filter: STØYSONEKATEGORI = 'R'
+  result_status: HIT-RED
+  planning_guidance_id: d48b5d13-04d6-4b04-91c5-3ca8c73e6694
+geom_field: GEOM
+properties:
+- STØYSONEKATEGORI
+- STØYKILDE
+- STØYKILDENAVN
+- STØYMETODE
+- BEREGNETÅR
+themes:
+- forurensning

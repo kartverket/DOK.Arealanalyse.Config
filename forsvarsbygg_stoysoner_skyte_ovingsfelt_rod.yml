@@ -1,0 +1,24 @@
+---
+disabled: true
+
+type: dataset
+config_id: c0916093-aa27-42da-9433-99a0e56e0d74
+name: stoysoner_forsvarets_skyte_ovingsfelt_rod
+
+metadata_id: 21d93ab2-868f-4ef9-986b-bf362746f4bd
+# wfs: TODO - mangler WFS for stoyskytebane (kun WMS publisert)
+wms: https://wms.geonorge.no/skwms1/wms.stoyskytebane
+layers:
+- wms:
+  - stoyskytebane
+  filter: støysonekategori = 'R'
+  result_status: HIT-RED
+  planning_guidance_id: f11b8583-b4d3-4209-82b5-933353a55c03
+geom_field: område
+properties:
+- støysonekategori
+- støykilde
+- støykildenavn
+- beregnetÅr
+themes:
+- forurensning

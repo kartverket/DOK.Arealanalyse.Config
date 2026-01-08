@@ -1,0 +1,25 @@
+---
+
+type: dataset
+config_id: 9f1ef988-f7a8-40d1-abe0-2f967959eb78
+name: stoykartlegging_veg_t1442_gul
+
+metadata_id: d6db9f39-9725-4630-909e-5e62f09a0766
+wfs: https://www.vegvesen.no/kart/ogc/norstoy_1_0/ows
+wms: https://www.vegvesen.no/kart/ogc/norstoy_1_0/ows
+layers:
+- wfs: Stoyvarselkart
+  wms:
+  - Stoyvarselkart
+  filter: STØYSONEKATEGORI = 'G'
+  result_status: HIT-YELLOW
+  planning_guidance_id: 7289b11e-a253-4801-a766-f9845569031b
+geom_field: GEOM
+properties:
+- STØYSONEKATEGORI
+- STØYKILDE
+- STØYKILDENAVN
+- STØYMETODE
+- BEREGNETÅR
+themes:
+- forurensning
