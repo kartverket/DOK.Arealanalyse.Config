@@ -1,9 +1,8 @@
 ---
 
 type: dataset
-config_id: 5f847646-4166-40a1-9db5-02a1317922f0
+config_id: dcdd34ea-30bc-4f01-9c5c-43121edafa03
 name: dyrkbarjord
-disabled: false
 
 metadata_id: 8252baea-5bad-428b-8f18-fe236fa4ced6
 wfs: https://wfs.nibio.no/cgi-bin/dyrkbarjord
