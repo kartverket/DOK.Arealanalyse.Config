@@ -3,17 +3,18 @@
 type: dataset
 config_id: 5f847646-4166-40a1-9db5-02a1317922f0
 name: dyrkbarjord
-disabled: true
+
 
 metadata_id: 8252baea-5bad-428b-8f18-fe236fa4ced6
 wfs: https://wfs.nibio.no/cgi-bin/dyrkbarjord
-wms: https://wms.nibio.no/cgi-bin/dyrkbarjord
+wms: https://wms.nibio.no/cgi-bin/dyrkbarjord_2
 layers:
 - wfs: Dyrkbarjord
   wms:
-  - dyrkbarjord
+  - dyrkbar_jord
   result_status: HIT-RED
-  planning_guidance_id: 9bcc357d-6406-4885-98ca-2ff4ea13ff0e
+  planning_guidance_id: 2453bf10-246a-4367-aca5-26c694b0ff5d
+  building_guidance_id: c03c2643-b264-4650-a8d8-b17e15f736fb
 geom_field: msGeometry
 properties:
 - dyrkbarjord
