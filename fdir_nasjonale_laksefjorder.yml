@@ -1,0 +1,30 @@
+---
+type: dataset
+config_id: 3fce68a7-cba7-419f-b68d-f076dfc9bdaa
+name: nasjonale_laksefjorder
+
+metadata_id: b12d041d-03d4-4562-b333-bc9d7c9bd123
+wfs: https://wfs.geonorge.no/skwms1/wfs.laksefjorder
+wms: https://gis.fiskeridir.no/server/services/fiskeridirWMS_fiskeri/MapServer/WMSServer
+layers:
+- wfs: app:Laksefjord
+  wms:
+  - nasjonale_laksefjorder
+  result_status: HIT-RED
+  planning_guidance_id: 1c07fc1e-7037-4053-a041-c67970a94912
+geom_field: område
+properties:
+- identifikasjon
+- datauttaksdato
+- opphav
+- lokalId
+- navnerom
+- versjonId
+- fjord
+- runde
+- region
+- fylke
+- grensepunkt
+themes:
+- Kyst og fiskeri
+---

@@ -1,0 +1,40 @@
+---
+type: dataset
+config_id: 7a685088-2288-4919-915d-0ef7237739c1
+name: gyteomrader
+
+metadata_id: c3d6bba0-e4b0-44e6-93a4-5b379946acb7
+wfs: https://wfs.geonorge.no/skwms1/wfs.gyteomrader
+wms: https://gis.fiskeridir.no/server/services/fiskeridirWMS_fiskeri/MapServer/WMSServer
+layers:
+- wfs: app:Gyteområde
+  wms:
+  - gyteomraader
+  result_status: HIT-RED
+  planning_guidance_id: 5b7de79c-cf6b-4745-bd74-b9b5a156949e
+geom_field: område
+properties:
+- artskode
+- norskArtsnavn
+- mndFra
+- mndTil
+- identifikasjon
+- posisjonskvalitet
+- kommune
+- datauttaksdato
+- datafangstdato
+- førsteDigitaliseringsdato
+- oppdateringsdato
+- opphav
+- informasjon
+- områdeId
+- stedsnavn
+- fiskeriRessursOmrådetype
+- fiskeressurs
+- lokalId
+- navnerom
+- målemetode
+- nøyaktighet
+themes:
+- Kyst og fiskeri
+---

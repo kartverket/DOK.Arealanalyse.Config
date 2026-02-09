@@ -1,0 +1,40 @@
+---
+type: dataset
+config_id: 8d1ba1cf-038b-459e-9854-7b3306b03b6e
+name: akvakultur_lokaliteter
+
+metadata_id: 4ca8af5e-ffc7-4636-847d-4eca92c4a3b0
+wfs: https://gis.fiskeridir.no/server/services/FiskeridirWFS/MapServer/WFSServer
+wms: https://gis.fiskeridir.no/server/services/fiskeridirWMS_akva/MapServer/WMSServer
+layers:
+- wfs: FiskeridirWFS:Akvakultur_-_Lokaliteter
+  wms:
+  - akvakultur_lokaliteter
+  result_status: HIT-RED
+  planning_guidance_id: 9023ca47-d304-4eaf-bacc-ba51295614cb
+geom_field: shape
+properties:
+- objectid
+- loknr
+- navn
+- status_lokalitet
+- klareringsdato
+- klareringstype
+- kapasitet_lok
+- kapasitet_enhet
+- plassering
+- vannmiljo
+- lokalitet
+- fylke
+- kommune
+- arter
+- innehaver
+- akvakulturregister
+- tillatelser
+- formål
+- produksjonsform
+- lokalitet_url_ekstern
+- status
+themes:
+- Kyst og fiskeri
+---

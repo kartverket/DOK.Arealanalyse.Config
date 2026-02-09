@@ -1,0 +1,48 @@
+---
+type: dataset
+config_id: f504d640-c952-4532-9c93-82bda3fa24c9
+name: fiskeplasser_redskap
+
+metadata_id: 09a40026-00e2-4fd8-b390-afd8d6f88c63
+wfs: https://wfs.geonorge.no/skwms1/wfs.fiskeplasserredskap
+wms: https://gis.fiskeridir.no/server/services/fiskeridirWMS_fiskeri/MapServer/WMSServer
+layers:
+- wfs: app:FiskeplassAktiveRedskap
+  wms:
+  - fiskeplasser_aktive_redskap
+  result_status: HIT-RED
+  planning_guidance_id: b0cc6729-3ef2-468a-8f49-b203052601ea
+- wfs: app:FiskeplassPassiveRedskap
+  wms:
+  - fiskeplasser_passive_redskap
+  result_status: HIT-RED
+  planning_guidance_id: b0cc6729-3ef2-468a-8f49-b203052601ea
+geom_field: område
+properties:
+- objektId
+- stedsnavn
+- omrBruker
+- bruksbeskrivelse
+- fiskeriredskapAktiv
+- artskode
+- norskArtsnavn
+- mndFra
+- mndTil
+- fiskeriredskapPassiv
+- fiske
+- kommune
+- identifikasjon
+- posisjonskvalitet
+- datafangstdato
+- førsteDigitaliseringsdato
+- oppdateringsdato
+- datauttaksdato
+- opphav
+- merknader
+- lokalId
+- navnerom
+- målemetode
+- nøyaktighet
+themes:
+- Kyst og fiskeri
+---
