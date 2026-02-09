@@ -7,7 +7,7 @@ metadata_id: 4ca8af5e-ffc7-4636-847d-4eca92c4a3b0
 wfs: https://gis.fiskeridir.no/server/services/FiskeridirWFS/MapServer/WFSServer
 wms: https://gis.fiskeridir.no/server/services/fiskeridirWMS_akva/MapServer/WMSServer
 layers:
-- wfs: FiskeridirWFS:Akvakultur_-_Lokaliteter
+- wfs: Akvakultur_-_Lokaliteter
   wms:
   - akvakultur_lokaliteter
   result_status: HIT-RED

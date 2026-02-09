@@ -7,7 +7,7 @@ metadata_id: c3d6bba0-e4b0-44e6-93a4-5b379946acb7
 wfs: https://wfs.geonorge.no/skwms1/wfs.gyteomrader
 wms: https://gis.fiskeridir.no/server/services/fiskeridirWMS_fiskeri/MapServer/WMSServer
 layers:
-- wfs: app:Gyteområde
+- wfs: Gyteområde
   wms:
   - gyteomraader
   result_status: HIT-RED

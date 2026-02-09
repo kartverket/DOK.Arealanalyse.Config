@@ -7,7 +7,7 @@ metadata_id: b12d041d-03d4-4562-b333-bc9d7c9bd123
 wfs: https://wfs.geonorge.no/skwms1/wfs.laksefjorder
 wms: https://gis.fiskeridir.no/server/services/fiskeridirWMS_fiskeri/MapServer/WMSServer
 layers:
-- wfs: app:Laksefjord
+- wfs: Laksefjord
   wms:
   - nasjonale_laksefjorder
   result_status: HIT-RED

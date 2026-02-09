@@ -7,12 +7,12 @@ metadata_id: 09a40026-00e2-4fd8-b390-afd8d6f88c63
 wfs: https://wfs.geonorge.no/skwms1/wfs.fiskeplasserredskap
 wms: https://gis.fiskeridir.no/server/services/fiskeridirWMS_fiskeri/MapServer/WMSServer
 layers:
-- wfs: app:FiskeplassAktiveRedskap
+- wfs: FiskeplassAktiveRedskap
   wms:
   - fiskeplasser_aktive_redskap
   result_status: HIT-RED
   planning_guidance_id: b0cc6729-3ef2-468a-8f49-b203052601ea
-- wfs: app:FiskeplassPassiveRedskap
+- wfs: FiskeplassPassiveRedskap
   wms:
   - fiskeplasser_passive_redskap
   result_status: HIT-RED
