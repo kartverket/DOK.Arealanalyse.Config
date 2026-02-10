@@ -7,7 +7,7 @@ metadata_id: c3d6bba0-e4b0-44e6-93a4-5b379946acb7
 wfs: https://wfs.geonorge.no/skwms1/wfs.gyteomrader
 wms: https://gis.fiskeridir.no/server/services/fiskeridirWMS_fiskeri/MapServer/WMSServer
 layers:
-- wfs: Gyteområde
+- wfs: Gyteomr%C3%A5de
   wms:
   - gyteomraader
   result_status: HIT-RED
@@ -38,3 +38,21 @@ properties:
 themes:
 - Kyst og fiskeri
 ---
+
+
+type: quality
+config_id: 7a685088-2288-4919-915d-0ef7237739c1
+
+indicators:
+- type: coverage
+  quality_dimension_id: fullstendighet_dekning
+  quality_dimension_name: Fullstendighetsdekning
+  quality_warning_text: Området er ikke kartlagt for gyteområder
+  warning_threshold: Ikke kartlagt
+  geojson:
+    url: https://testnedlasting.geonorge.no/geonorge/Basisdata/DOKFullstendighetsdekningskart/Kartkatalogen/dekning_gyteomrader.geojson
+    property: dekningsstatus
+    properties:
+    - dataeier
+    - dekningsstatus
+    - dekningsinfo
