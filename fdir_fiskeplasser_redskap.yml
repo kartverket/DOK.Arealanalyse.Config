@@ -14,30 +14,8 @@ layers:
   planning_guidance_id: b0cc6729-3ef2-468a-8f49-b203052601ea
 geom_field: område
 properties:
-- objektId
 - stedsnavn
-- omrBruker
-- bruksbeskrivelse
-- fiskeriredskapAktiv
-- artskode
-- norskArtsnavn
-- mndFra
-- mndTil
-- fiskeriredskapPassiv
-- fiske
-- kommune
-- identifikasjon
-- posisjonskvalitet
-- datafangstdato
-- førsteDigitaliseringsdato
-- oppdateringsdato
-- datauttaksdato
-- opphav
-- merknader
-- lokalId
-- navnerom
-- målemetode
-- nøyaktighet
+
 themes:
 - Kyst og fiskeri
 ---
