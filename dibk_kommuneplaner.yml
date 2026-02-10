@@ -6,29 +6,21 @@ name: kommuneplaner
 disabled: true
 
 metadata_id: 41435fda-93ba-48a8-bd56-79a9287b6dad
-ogc_api: https://nap.ft.dibk.no/services/rest/kommuneplaner
+ogc_api: 
+  url: https://nap.ft.dibk.no/services/rest/kommuneplaner
+  auth:
+    username: ${NAP_USERNAME}
+    password: ${NAP_PASSWORD}
 wms: https://nap.ft.dibk.no/services/wms/kommuneplaner
 layers:
 - ogc_api: kpomrade
   wms:
-  - arealformal_kdp
-  - hensynssone-bestemmelsesomrade_kdp
-  - juridisklinje_kdp
-  - juridiskpunkt_kdp
-  - kdpomrade
-  - kdppaskrift
-  - arealformal_kp
-  - hensynssone-bestemmelsesomrade_kp
-  - juridisklinje_kp
-  - juridiskpunkt_kp
-  - kpomrade
-  - kppaskrift
-  result_status: HIT-YELLOW
-  planning_guidance_id: 3f6fc10c-d4a8-4d75-8db8-522878b2251c
+  - kommuneplan
+  result_status: HIT-RED
 geom_field: geometry
 properties:
-- kommunenummer
-- planidentifikasjon
+- arealplanId.kommunenummer
+- arealplanId.planidentifikasjon
 - plannavn
 - plantype
 - planstatus
@@ -36,4 +28,4 @@ properties:
 - vedtakendeligplandato
 - link
 themes:
-- plan
+- Plan

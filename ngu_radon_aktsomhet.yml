@@ -1,7 +1,7 @@
 ---
 type: dataset
 config_id: a39a8a5d-3fd3-4d0e-a634-bd70dae880ca
-name: Radon aktsomhet
+name: radon_aktsomhet
 disabled: true
 
 metadata_id: dc0605f3-2301-4abe-a91f-6da42464c281

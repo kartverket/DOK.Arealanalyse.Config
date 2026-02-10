@@ -2,7 +2,7 @@
 
 type: dataset
 config_id: 3a220fd3-2aa3-4c34-89aa-b41c07f6564d
-name: naturvernområder
+name: naturvernområder_foreslåtte
 
 metadata_id: 0e7eb17f-35ef-46d3-a465-3112d8bb2b5e
 arcgis: https://kart.miljodirektoratet.no/arcgis/rest/services/vern/mapserver
@@ -23,4 +23,4 @@ properties:
 - maalemetode
 - noeyaktighet
 themes:
-- natur
+- Natur

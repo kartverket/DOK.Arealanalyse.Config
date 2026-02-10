@@ -6,24 +6,21 @@ name: reguleringsplaner
 disabled: true
 
 metadata_id: dac27348-5c2e-4a6a-9497-c4c792108cae
-ogc_api: https://nap.ft.dibk.no/services/rest/reguleringsplaner/vn2
+ogc_api: 
+  url: https://nap.ft.dibk.no/services/rest/reguleringsplaner/vn2
+  auth:
+    username: ${NAP_USERNAME}
+    password: ${NAP_PASSWORD}
 wms: https://nap.ft.dibk.no/services/wms/reguleringsplaner
 layers:
 - ogc_api: rpomrade
   wms:
-  - arealformal_vn2
-  - hensynssoner_vn2
-  - bestemmelsesomrader_vn2
-  - rpjuridisklinje_vn2
-  - rpregulerthoyde_vn2
-  - rpjuridiskpunkt_vn2
-  - rppaskrift_vn2
-  - rpomrade_vn2
-  result_status: HIT-YELLOW
+  - vertikalniva_2
+  result_status: HIT-RED
 geom_field: geometry
 properties:
-- kommunenummer
-- planidentifikasjon
+- arealplanId.kommunenummer
+- arealplanId.planidentifikasjon
 - plannavn
 - plantype
 - planstatus
@@ -31,4 +28,4 @@ properties:
 - vedtakendeligplandato
 - link
 themes:
-- plan
+- Plan

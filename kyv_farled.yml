@@ -17,7 +17,7 @@ geom_field: lokalisering
 properties:
 - datauttaksdato
 themes:
-- samferdsel
+- Samferdsel
 ---
 
 type: quality
@@ -30,7 +30,7 @@ indicators:
   quality_warning_text: Området er ikke kartlagt for hovedled og biled arealgrense.
   warning_threshold: Ikke kartlagt
   gpkg:
-    url: https://testnedlasting.geonorge.no/geonorge/Basisdata/DOKFullstendighetsdekningskart/GPKG/Dekning_hovedled_biled_arealgrense.gpkg
+    url: file:///mnt/dokanalyse/geopackage/dekning_hovedled_biled_arealgrense.gpkg
     property: dekningsstatus
     properties:
     - dataeier
