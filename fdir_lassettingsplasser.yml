@@ -7,7 +7,7 @@ metadata_id: fb59846b-edb3-4631-ba85-90dd0193e3be
 wfs: https://wfs.geonorge.no/skwms1/wfs.lassettingsplasser
 wms: https://gis.fiskeridir.no/server/services/fiskeridirWMS_fiskeri/MapServer/WMSServer
 layers:
-- wfs: L%C3%A5ssettingsplass
+- wfs: Låssettingsplass
   wms:
   - laassettingsplasser
   result_status: HIT-RED
