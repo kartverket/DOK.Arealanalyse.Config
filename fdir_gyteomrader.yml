@@ -18,23 +18,7 @@ properties:
 - norskArtsnavn
 - mndFra
 - mndTil
-- identifikasjon
-- posisjonskvalitet
-- kommune
-- datauttaksdato
-- datafangstdato
-- førsteDigitaliseringsdato
-- oppdateringsdato
-- opphav
-- informasjon
-- områdeId
-- stedsnavn
-- fiskeriRessursOmrådetype
-- fiskeressurs
-- lokalId
-- navnerom
-- målemetode
-- nøyaktighet
+
 themes:
 - Kyst og fiskeri
 ---
