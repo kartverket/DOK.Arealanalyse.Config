@@ -1,7 +1,7 @@
 ---
 type: dataset
 config_id: c0d28154-1d0c-4d86-8b65-091588c3eb27
-name: Mulig marin leire
+name: mulig_marin_leire
 disabled: true
 
 metadata_id: 641a81c2-9354-473b-b8f0-2b1e2ab3930a
@@ -16,4 +16,4 @@ geom_field: <fyll inn når vektor finnes>
 properties:
 # legg til attributter (f.eks. navn, verdivurdering) så snart vektor er tilgjengelig
 themes:
-- geologi
+- Geologi

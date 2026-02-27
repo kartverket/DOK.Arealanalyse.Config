@@ -12,7 +12,7 @@ layers:
 - wfs: skisesong_referanseperiode_1991_2020
   wms:
   - '1'
-  filter: label IN ['60 - 90', '90 - 120', '120 - 150', '150 - 180', '180 - 210', '210 - 240', '> 240']
+  filter: label IN ('60 - 90', '90 - 120', '120 - 150', '150 - 180', '180 - 210', '210 - 240', '> 240')
   result_status: HIT-YELLOW
   planning_guidance_id: b2346557-480b-4856-966d-f54c04eb6f9d
 geom_field: Shape

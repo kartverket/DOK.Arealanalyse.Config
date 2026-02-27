@@ -11,7 +11,7 @@ layers:
 - wfs: Stoyvarselkart
   wms:
   - Stoyvarselkart
-  filter: STØYSONEKATEGORI = 'R'
+  filter: '"STØYSONEKATEGORI" = ''R'''
   result_status: HIT-RED
   planning_guidance_id: d48b5d13-04d6-4b04-91c5-3ca8c73e6694
 geom_field: GEOM
@@ -22,4 +22,4 @@ properties:
 - STØYMETODE
 - BEREGNETÅR
 themes:
-- forurensning
+- Forurensning

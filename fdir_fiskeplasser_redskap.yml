@@ -7,33 +7,30 @@ metadata_id: 09a40026-00e2-4fd8-b390-afd8d6f88c63
 wfs: https://wfs.geonorge.no/skwms1/wfs.fiskeplasserredskap
 wms: https://gis.fiskeridir.no/server/services/fiskeridirWMS_fiskeri/MapServer/WMSServer
 layers:
-- wfs: FiskeplassAktiveRedskap
-  wms:
-  - fiskeplasser_aktive_redskap
-  result_status: HIT-RED
-  planning_guidance_id: b0cc6729-3ef2-468a-8f49-b203052601ea
+  - wfs: FiskeplassAktiveRedskap
+    wms:
+      - fiskeplasser_aktive_redskap
+    result_status: HIT-RED
+    planning_guidance_id: b0cc6729-3ef2-468a-8f49-b203052601ea
 geom_field: område
 properties:
-- stedsnavn
-
+  - stedsnavn
 themes:
-- Kyst og fiskeri
+  - Kyst og fiskeri
 ---
-
 type: quality
 config_id: f504d640-c952-4532-9c93-82bda3fa24c9
 
 indicators:
-- type: coverage
-  quality_dimension_id: fullstendighet_dekning
-  quality_dimension_name: Fullstendighetsdekning
-  quality_warning_text: Området er ikke kartlagt for fiskeplasser - redskap
-  warning_threshold: Ikke kartlagt
-  geojson:
-    url: https://testnedlasting.geonorge.no/geonorge/Basisdata/DOKFullstendighetsdekningskart/Kartkatalogen/dekning_fiskeplasser_redskap.geojson
-    property: dekningsstatus
-    properties:
-    - dataeier
-    - dekningsstatus
-    - dekningsinfo
-
+  - type: coverage
+    quality_dimension_id: fullstendighet_dekning
+    quality_dimension_name: Fullstendighetsdekning
+    quality_warning_text: Området er ikke kartlagt for fiskeplasser - redskap
+    warning_threshold: Ikke kartlagt
+    geojson:
+      url: https://testnedlasting.geonorge.no/geonorge/Basisdata/DOKFullstendighetsdekningskart/Kartkatalogen/dekning_fiskeplasser_redskap.geojson
+      property: dekningsstatus
+      properties:
+        - dataeier
+        - dekningsstatus
+        - dekningsinfo

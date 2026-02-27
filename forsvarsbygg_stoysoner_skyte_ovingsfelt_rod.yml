@@ -9,16 +9,16 @@ metadata_id: 21d93ab2-868f-4ef9-986b-bf362746f4bd
 # wfs: TODO - mangler WFS for stoyskytebane (kun WMS publisert)
 wms: https://wms.geonorge.no/skwms1/wms.stoyskytebane
 layers:
-- wms:
-  - stoyskytebane
-  filter: støysonekategori = 'R'
-  result_status: HIT-RED
-  planning_guidance_id: f11b8583-b4d3-4209-82b5-933353a55c03
+  - wms:
+      - stoyskytebane
+    filter: '"støysonekategori" = ''R'''
+    result_status: HIT-RED
+    planning_guidance_id: f11b8583-b4d3-4209-82b5-933353a55c03
 geom_field: område
 properties:
-- støysonekategori
-- støykilde
-- støykildenavn
-- beregnetÅr
+  - støysonekategori
+  - støykilde
+  - støykildenavn
+  - beregnetÅr
 themes:
-- forurensning
+  - Forurensning

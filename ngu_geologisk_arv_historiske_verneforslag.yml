@@ -17,4 +17,4 @@ geom_field: <fyll inn når vektor finnes>
 properties:
 # legg til attributter (f.eks. navn, verdivurdering) så snart vektor er tilgjengelig
 themes:
-- geologi
+- Geologi

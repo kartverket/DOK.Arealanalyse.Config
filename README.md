@@ -104,15 +104,15 @@ layers:
 Hvilke DOK tema hører datasettet til - https://register.geonorge.no/metadata-kodelister/nasjonal-temainndeling
 ```yml
 themes:
-- natur
+- Natur
 ```
 ```yml
 themes:
-- kulturminner
+- Kulturminner
 ```
 ```yml
 themes:
-- samfunnssikkerhet
+- Samfunnssikkerhet
 ```
 ### Veiledningstekster: 
 Det angis referanse til ID på aktuell veiledningstekst fra https://register.geonorge.no/geolett/. guid som vist i eksempel viser til oppslag på denne id i API for Veiledningsregister https://register.geonorge.no/geolett/api/. guid 9d803106-57f6-494e-bca8-67f1fd1f72a3 vil hente veiledningstekst fra Naturtypelokalitet, svært stor verdi - https://register.geonorge.no/geolett/1071/ 

@@ -7,35 +7,33 @@ metadata_id: fb59846b-edb3-4631-ba85-90dd0193e3be
 wfs: https://wfs.geonorge.no/skwms1/wfs.lassettingsplasser
 wms: https://gis.fiskeridir.no/server/services/fiskeridirWMS_fiskeri/MapServer/WMSServer
 layers:
-- wfs: Låssettingsplass
-  wms:
-  - laassettingsplasser
-  result_status: HIT-RED
-  planning_guidance_id: 138b9f6f-5b2d-4ff6-aba5-23ddfe3e9015
+  - wfs: Låssettingsplass
+    wms:
+      - laassettingsplasser
+    result_status: HIT-RED
+    planning_guidance_id: 138b9f6f-5b2d-4ff6-aba5-23ddfe3e9015
 geom_field: område
 properties:
-- stedsnavn
-- fiskeribrukstype
-- statusLåssettingsplass
-- merknad
-
+  - stedsnavn
+  - fiskeribrukstype
+  - statusLåssettingsplass
+  - merknad
 themes:
-- Kyst og fiskeri
+  - Kyst og fiskeri
 ---
-
 type: quality
 config_id: d02c0fa1-0439-4f16-8040-10527c362f85
 
 indicators:
-- type: coverage
-  quality_dimension_id: fullstendighet_dekning
-  quality_dimension_name: Fullstendighetsdekning
-  quality_warning_text: Området er ikke kartlagt for låssettingsplasser
-  warning_threshold: Ikke kartlagt
-  geojson:
-    url: https://testnedlasting.geonorge.no/geonorge/Basisdata/DOKFullstendighetsdekningskart/Kartkatalogen/dekning_lassettingsplasser.geojson
-    property: dekningsstatus
-    properties:
-    - dataeier
-    - dekningsstatus
-    - dekningsinfo
+  - type: coverage
+    quality_dimension_id: fullstendighet_dekning
+    quality_dimension_name: Fullstendighetsdekning
+    quality_warning_text: Området er ikke kartlagt for låssettingsplasser
+    warning_threshold: Ikke kartlagt
+    geojson:
+      url: https://testnedlasting.geonorge.no/geonorge/Basisdata/DOKFullstendighetsdekningskart/Kartkatalogen/dekning_lassettingsplasser.geojson
+      property: dekningsstatus
+      properties:
+        - dataeier
+        - dekningsstatus
+        - dekningsinfo
