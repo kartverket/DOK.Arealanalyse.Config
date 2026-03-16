@@ -4,13 +4,13 @@ config_id: 9f73482c-e1be-44b8-8efd-6eea93b075e7
 name: sefrak_bygninger_status_1_2
 
 metadata_id: 93f06149-037c-48cf-b294-d166f65b6838
-arcgis: https://kart.ra.no/arcgis/rest/services/Distribusjon/Kulturminner20180301/MapServer
+ogc_api: https://api.ra.no/KulturminnerSEFRAKbygninger
 wms: https://kart.ra.no/wms/sefrak
 layers:
-- arcgis: '2'
+- ogc_api: sefrakbygninger
   wms:
   - SEFRAKBygninger
-  filter: sefrakStatus IN (1, 2)
+  filter: sefrakStatus IN ('1', '2')
   result_status: HIT-RED
   planning_guidance_id: 5a439c95-630e-46cd-854a-70b89afbc654
   building_guidance_id: cd8ab249-3b80-4687-89e5-d4795cf18dd7
