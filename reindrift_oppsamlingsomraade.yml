@@ -20,3 +20,20 @@ properties:
 - oppdateringsdato
 themes:
 - Landbruk
+---
+type: quality
+config_id: 0054b4a9-4bb5-4322-9ba6-6f9fd390ec9c
+
+indicators:
+- type: coverage
+  quality_dimension_id: fullstendighet_dekning
+  quality_dimension_name: Fullstendighetsdekning
+  quality_warning_text: Området har ikke dekning for reindrift oppsamlingsområde
+  warning_threshold: null
+  geojson:
+    url: https://testnedlasting.geonorge.no/geonorge/Basisdata/DOKFullstendighetsdekningskart/Kartkatalogen/dekning_reindrift_oppsamlingsomrade.geojson
+    property: dekningsstatus
+    properties:
+    - dataeier
+    - dekningsstatus
+    - dekningsinfo

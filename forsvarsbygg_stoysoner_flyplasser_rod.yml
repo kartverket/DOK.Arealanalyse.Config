@@ -21,3 +21,20 @@ properties:
   - beregnetÅr
 themes:
   - Forurensning
+---
+type: quality
+config_id: 06189773-16a0-4de1-8776-bdf088c9f344
+
+indicators:
+  - type: coverage
+    quality_dimension_id: fullstendighet_dekning
+    quality_dimension_name: Fullstendighetsdekning
+    quality_warning_text: Området har ikke dekning for støysoner forsvarets flyplasser
+    warning_threshold: null
+    geojson:
+      url: https://testnedlasting.geonorge.no/geonorge/Basisdata/DOKFullstendighetsdekningskart/Kartkatalogen/dekning_stoysoner_forsvarets_flyplasser.geojson
+      property: dekningsstatus
+      properties:
+        - dataeier
+        - dekningsstatus
+        - dekningsinfo

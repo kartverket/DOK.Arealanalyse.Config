@@ -20,3 +20,20 @@ properties:
 - oppdateringsdato
 themes:
 - Landbruk
+---
+type: quality
+config_id: d1b8ace8-18c8-43e6-86f7-858b6d4d2a2e
+
+indicators:
+- type: coverage
+  quality_dimension_id: fullstendighet_dekning
+  quality_dimension_name: Fullstendighetsdekning
+  quality_warning_text: Området har ikke dekning for reindrift trekklei
+  warning_threshold: null
+  geojson:
+    url: https://testnedlasting.geonorge.no/geonorge/Basisdata/DOKFullstendighetsdekningskart/Kartkatalogen/dekning_reindrift_trekklei.geojson
+    property: dekningsstatus
+    properties:
+    - dataeier
+    - dekningsstatus
+    - dekningsinfo

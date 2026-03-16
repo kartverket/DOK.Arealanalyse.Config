@@ -23,5 +23,20 @@ properties:
 - komid
 themes:
 - Geologi
+---
+type: quality
+config_id: dcdd34ea-30bc-4f01-9c5c-43121edafa03
 
-
+indicators:
+- type: coverage
+  quality_dimension_id: fullstendighet_dekning
+  quality_dimension_name: Fullstendighetsdekning
+  quality_warning_text: Området har ikke dekning for dyrkbar jord
+  warning_threshold: null
+  geojson:
+    url: https://testnedlasting.geonorge.no/geonorge/Basisdata/DOKFullstendighetsdekningskart/Kartkatalogen/dekning_dyrkbar_jord.geojson
+    property: dekningsstatus
+    properties:
+    - dataeier
+    - dekningsstatus
+    - dekningsinfo

@@ -24,3 +24,20 @@ properties:
 - noeyaktighet
 themes:
 - Natur
+---
+type: quality
+config_id: 3a220fd3-2aa3-4c34-89aa-b41c07f6564d
+
+indicators:
+- type: coverage
+  quality_dimension_id: fullstendighet_dekning
+  quality_dimension_name: Fullstendighetsdekning
+  quality_warning_text: Området har ikke dekning for foreslåtte naturvernområder
+  warning_threshold: null
+  geojson:
+    url: https://testnedlasting.geonorge.no/geonorge/Basisdata/DOKFullstendighetsdekningskart/Kartkatalogen/dekning_naturvernomrader_foreslatte.geojson
+    property: dekningsstatus
+    properties:
+    - dataeier
+    - dekningsstatus
+    - dekningsinfo

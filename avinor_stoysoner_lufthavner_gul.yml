@@ -22,3 +22,20 @@ properties:
   - beregnetÅr
 themes:
   - forurensning
+---
+type: quality
+config_id: b58239cd-7743-44be-bd0b-98a9edd7b728
+
+indicators:
+  - type: coverage
+    quality_dimension_id: fullstendighet_dekning
+    quality_dimension_name: Fullstendighetsdekning
+    quality_warning_text: Området har ikke dekning for støysoner lufthavner
+    warning_threshold: null
+    geojson:
+      url: https://testnedlasting.geonorge.no/geonorge/Basisdata/DOKFullstendighetsdekningskart/Kartkatalogen/dekning_stoysoner_lufthavn.geojson
+      property: dekningsstatus
+      properties:
+        - dataeier
+        - dekningsstatus
+        - dekningsinfo

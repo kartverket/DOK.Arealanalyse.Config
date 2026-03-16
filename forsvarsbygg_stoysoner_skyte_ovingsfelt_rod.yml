@@ -22,3 +22,20 @@ properties:
   - beregnetÅr
 themes:
   - Forurensning
+---
+type: quality
+config_id: c0916093-aa27-42da-9433-99a0e56e0d74
+
+indicators:
+  - type: coverage
+    quality_dimension_id: fullstendighet_dekning
+    quality_dimension_name: Fullstendighetsdekning
+    quality_warning_text: Området har ikke dekning for støysoner skyte- og øvingsfelt
+    warning_threshold: null
+    geojson:
+      url: https://testnedlasting.geonorge.no/geonorge/Basisdata/DOKFullstendighetsdekningskart/Kartkatalogen/dekning_stoysoner_skyte_og_ovingsfelt.geojson
+      property: dekningsstatus
+      properties:
+        - dataeier
+        - dekningsstatus
+        - dekningsinfo

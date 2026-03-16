@@ -21,3 +21,20 @@ properties:
 - vannKilde
 themes:
 - Samfunnssikkerhet
+---
+type: quality
+config_id: 72599474-0ab7-4563-8d68-4fe330781d36
+
+indicators:
+- type: coverage
+  quality_dimension_id: fullstendighet_dekning
+  quality_dimension_name: Fullstendighetsdekning
+  quality_warning_text: Området har ikke dekning for flom aktsomhetsområder
+  warning_threshold: null
+  geojson:
+    url: https://testnedlasting.geonorge.no/geonorge/Basisdata/DOKFullstendighetsdekningskart/Kartkatalogen/dekning_flom_aktsomhetsomrader.geojson
+    property: dekningsstatus
+    properties:
+    - dataeier
+    - dekningsstatus
+    - dekningsinfo
