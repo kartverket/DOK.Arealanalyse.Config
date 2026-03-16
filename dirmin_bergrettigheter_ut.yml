@@ -37,7 +37,7 @@ indicators:
   quality_dimension_id: fullstendighet_dekning
   quality_dimension_name: Fullstendighetsdekning
   quality_warning_text: Området har ikke dekning for bergrettigheter
-  warning_threshold: null
+  warning_threshold: Ikke kartlagt
   geojson:
     url: https://testnedlasting.geonorge.no/geonorge/Basisdata/DOKFullstendighetsdekningskart/Kartkatalogen/dekning_bergrettigheter.geojson
     property: dekningsstatus
