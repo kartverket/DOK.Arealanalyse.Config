@@ -1,0 +1,23 @@
+---
+type: dataset
+config_id: eb51a046-e70e-4b64-952a-860cdc4eb46e
+name: sefrak_bygninger_status_0
+
+metadata_id: 93f06149-037c-48cf-b294-d166f65b6838
+wfs: https://wfs.geonorge.no/skwms1/wfs.sefrak
+wms: https://kart.ra.no/wms/sefrak
+layers:
+- wfs: KulturminneBygning
+  wms:
+  - SEFRAKBygninger
+  filter: sefrakStatus = '0'
+  result_status: HIT-YELLOW
+  planning_guidance_id: 4c74c327-21c3-494e-8a56-b598171b99fe
+  building_guidance_id: 99b99dee-46ce-4f80-82cd-c8c316541cde
+geom_field: posisjon
+properties:
+- bygningsnummer
+- sefrakStatus
+- lokaltnavn
+themes:
+- Kulturminner

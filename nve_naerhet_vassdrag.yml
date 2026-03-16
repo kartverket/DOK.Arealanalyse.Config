@@ -1,0 +1,18 @@
+---
+type: dataset
+config_id: bdcff418-bf9a-44e2-8603-b02f99065f16
+name: naerhet_vassdrag
+disabled: true
+
+metadata_id: 595e47d9-d201-479c-a77d-cbc1f573a76b
+# wfs: TODO - mangler WFS for FKB-Vann
+wms: https://wms.geonorge.no/skwms1/wms.fkb
+layers:
+- wms:
+  - fkb_vann
+  result_status: HIT-RED
+  building_guidance_id: 1e5a3686-450d-4a3b-a479-e14f638e20bf
+geom_field: # fyll inn når WFS finnes
+properties: '*'
+themes:
+- Natur

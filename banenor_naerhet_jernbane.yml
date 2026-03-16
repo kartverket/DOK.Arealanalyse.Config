@@ -1,0 +1,20 @@
+---
+type: dataset
+config_id: 6e7a7ec1-e5ba-4a79-ae7e-5cad377f3971
+name: naerhet_jernbane
+
+metadata_id: 3165138f-1461-44fe-8b10-eac44e08a10a
+wfs: https://wfs.geonorge.no/skwms1/wfs.banenettverk
+wms: https://wms.geonorge.no/skwms1/wms.banenettverk
+layers:
+- wfs: Banelenke
+  wms:
+  - banelenke_medium
+  result_status: HIT-RED
+  building_guidance_id: 25deaeb8-b37f-4435-b7e7-6e97df714eeb
+geom_field: senterlinje
+properties:
+- medium
+- nøyaktighetsklasse
+themes:
+- Samferdsel
