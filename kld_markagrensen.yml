@@ -13,12 +13,8 @@ layers:
   - lovVirkeonraade
   result_status: HIT-RED
 geom_field: område  
-properties:
-- lovNavn
-- lovDokumentlink
-- forskriftsNavn
-- forskriftsDokumentlink
-- geografiskVirkeområde
+properties: '*'
+
 themes:
 - Natur
 ---
