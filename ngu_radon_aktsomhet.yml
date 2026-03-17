@@ -8,13 +8,13 @@ metadata_id: dc0605f3-2301-4abe-a91f-6da42464c281
 # vektor: mangler offentlig WFS/OGC API. Når NGU åpner for uttrekk, sett wfs/ogc_api her.
 wms: https://geo.ngu.no/mapserver/RadonAktsomhetWMS
 layers:
-- wms:
-  - RadonAktsomhetWMS
-  - Radon_aktsomhet
-  result_status: HIT-RED
-  planning_guidance_id: a39a8a5d-3fd3-4d0e-a634-bd70dae880ca
+  - wms:
+      - RadonAktsomhetWMS
+      - Radon_aktsomhet
+    result_status: HIT-RED
+    planning_guidance_id: a39a8a5d-3fd3-4d0e-a634-bd70dae880ca
 geom_field: <fyll inn når vektor finnes>
 properties:
 # legg til attributter (f.eks. navn, verdivurdering) så snart vektor er tilgjengelig
 themes:
-- geologi
+  - geologi

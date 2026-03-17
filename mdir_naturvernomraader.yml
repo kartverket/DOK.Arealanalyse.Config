@@ -1,5 +1,4 @@
 ---
-
 type: dataset
 config_id: 52c83a47-8a84-4962-839f-87418c124262
 name: naturvernområder
@@ -8,36 +7,35 @@ metadata_id: 5857ec0a-8d2c-4cd8-baa2-0dc54ae213b4
 arcgis: https://kart.miljodirektoratet.no/arcgis/rest/services/vern/mapserver
 wms: https://kart.miljodirektoratet.no/arcgis/services/vern/mapServer/WMSServer
 layers:
-- arcgis: '0'
-  wms:
-  - naturvern_omrade
-  result_status: HIT-RED
-  planning_guidance_id: c92e5406-28a5-4227-add5-67ebb62aede7
-  building_guidance_id: 01dff263-fb66-433d-82e0-ae45df5378dc
+  - arcgis: "0"
+    wms:
+      - naturvern_omrade
+    result_status: HIT-RED
+    planning_guidance_id: c92e5406-28a5-4227-add5-67ebb62aede7
+    building_guidance_id: 01dff263-fb66-433d-82e0-ae45df5378dc
 properties:
-- navn
-- faktaark
-- verneform
-- verneforskrift
-- vernedato
-- forvaltningsmyndighet
+  - navn
+  - faktaark
+  - verneform
+  - verneforskrift
+  - vernedato
+  - forvaltningsmyndighet
 themes:
-- Natur
+  - Natur
 ---
-
 type: quality
 config_id: 52c83a47-8a84-4962-839f-87418c124262
 
 indicators:
-- type: coverage
-  quality_dimension_id: fullstendighet_dekning
-  quality_dimension_name: Fullstendighetsdekning
-  quality_warning_text: Området er ikke kartlagt for naturvernområder
-  warning_threshold: Ikke kartlagt
-  gpkg:
-    url: file:///mnt/dokanalyse/geopackage/dekningskart_mdir_naturvernomrader.gpkg
-    property: dekningsstatus
-    properties:
-    - dataeier
-    - dekningsstatus
-    - dekningsinfo
+  - type: coverage
+    quality_dimension_id: fullstendighet_dekning
+    quality_dimension_name: Fullstendighetsdekning
+    quality_warning_text: Området er ikke kartlagt for naturvernområder
+    warning_threshold: Ikke kartlagt
+    gpkg:
+      url: file:///mnt/dokanalyse/geopackage/dekningskart_mdir_naturvernomrader.gpkg
+      property: dekningsstatus
+      properties:
+        - dataeier
+        - dekningsstatus
+        - dekningsinfo

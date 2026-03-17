@@ -1,5 +1,4 @@
 ---
-
 type: dataset
 config_id: b9e77f46-5635-4689-beca-4992be6405c6
 name: markagrensen
@@ -8,34 +7,33 @@ metadata_id: 45e9ba77-388c-40eb-87df-e34e9d9ab300
 wfs: https://wfs.geonorge.no/skwms1/wfs.markagrensen
 wms: https://wms.geonorge.no/skwms1/wms.markagrensen
 layers:
-- wfs: LovVirkeområde
-  wms:
-  - lovVirkeonraade
-  result_status: HIT-RED
-geom_field: område  
+  - wfs: LovVirkeområde
+    wms:
+      - lovVirkeonraade
+    result_status: HIT-RED
+geom_field: område
 properties:
-- lovNavn
-- lovDokumentlink
-- forskriftsNavn
-- forskriftsDokumentlink
-- geografiskVirkeområde
+  - lovNavn
+  - lovDokumentlink
+  - forskriftsNavn
+  - forskriftsDokumentlink
+  - geografiskVirkeområde
 themes:
-- Natur
+  - Natur
 ---
-
 type: quality
 config_id: b9e77f46-5635-4689-beca-4992be6405c6
 
 indicators:
-- type: coverage
-  quality_dimension_id: fullstendighet_dekning
-  quality_dimension_name: Fullstendighetsdekning
-  quality_warning_text: Området er ikke kartlagt for markagrensen
-  warning_threshold: Ikke kartlagt
-  geojson:
-    url: file:///mnt/dokanalyse/geojson/dekningskart_kld_markagrensen.geojson
-    property: dekningsstatus
-    properties:
-    - dataeier
-    - dekningsstatus
-    - dekningsinfo
+  - type: coverage
+    quality_dimension_id: fullstendighet_dekning
+    quality_dimension_name: Fullstendighetsdekning
+    quality_warning_text: Området er ikke kartlagt for markagrensen
+    warning_threshold: Ikke kartlagt
+    geojson:
+      url: file:///mnt/dokanalyse/geojson/dekningskart_kld_markagrensen.geojson
+      property: dekningsstatus
+      properties:
+        - dataeier
+        - dekningsstatus
+        - dekningsinfo
