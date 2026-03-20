@@ -1,0 +1,17 @@
+---
+type: dataset
+config_id: d06d07e3-45c6-4065-bb21-4d4a76986c11
+name: spr_strandsoner
+
+metadata_id: f50f228a-9482-4821-97df-41166c1f5a9b
+wfs: https://wfs.geonorge.no/skwms1/wfs.spr
+wms: https://wms.geonorge.no/skwms1/wms.spr_strandsoner
+layers:
+- wfs: RprOmråde
+  wms:
+  - spr_strandsoner
+  result_status: HIT-RED
+geom_field: område
+properties: '*'
+themes:
+- Plan
