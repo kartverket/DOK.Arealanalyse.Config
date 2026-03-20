@@ -10,7 +10,7 @@ layers:
 - ogc_api: sefrakbygninger
   wms:
   - SEFRAKBygninger
-  filter: sefrakStatus = '0'
+  filter: sefrakStatus = 0
   result_status: HIT-YELLOW
   planning_guidance_id: 4c74c327-21c3-494e-8a56-b598171b99fe
   building_guidance_id: 99b99dee-46ce-4f80-82cd-c8c316541cde

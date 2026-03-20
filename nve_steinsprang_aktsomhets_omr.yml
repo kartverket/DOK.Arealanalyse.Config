@@ -1,12 +1,13 @@
 ---
+disabled: true
 
 type: dataset
 config_id: df4d09fa-86bd-4efa-bbdf-39d5d7e65840
 name: steinsprang_aktsomhets_omr
 
-metadata_id: 02c6d51c-4e8c-4948-a620-dc046c8cb747 
+metadata_id: 02c6d51c-4e8c-4948-a620-dc046c8cb747
 wfs: https://wfs.geonorge.no/skwms1/wfs.steinsprang_aktsomhetsomrader
-wms: https://nve.geodataonline.no/arcgis/services/SkredSteinAktR/MapServer/WmsServer
+wms: https://kart.nve.no/enterprise/services/SkredSteinAktR/MapServer/WMSServer
 layers:
 - wfs: PotensieltSkredfareOmr
   wms:
