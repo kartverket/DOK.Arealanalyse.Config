@@ -9,17 +9,12 @@ wms: https://kart.ra.no/wms/sefrak
 layers:
 - ogc_api: sefrakbygninger
   wms:
-  - SEFRAKBygninger
+  - SefrakBygninger
   filter: sefrakStatus IN (1, 2)
   result_status: HIT-RED
   planning_guidance_id: 5a439c95-630e-46cd-854a-70b89afbc654
   building_guidance_id: cd8ab249-3b80-4687-89e5-d4795cf18dd7
-geom_field: posisjon
-properties:
-- bygningsnummer
-- sefrakStatus
-- lokaltNavn
-- sefrakId
-- kulturminneVerneverdi
+geom_field: geom
+properties: '*'
 themes:
 - Kulturminner
