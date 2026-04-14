@@ -31,8 +31,8 @@ indicators:
   quality_dimension_name: Fullstendighetsdekning
   quality_warning_text: Området er ikke kartlagt for skredhendelser
   warning_threshold: Ikke kartlagt
-  gpkg:
-    url: file:///mnt/dokanalyse/geopackage/dekningskart_nve_skredhendelser.gpkg
+  geojson:
+    url: https://testnedlasting.geonorge.no/geonorge/Basisdata/DOKFullstendighetsdekningskart/Kartkatalogen/dekning_skredhendelser.geojson
     property: dekningsstatus
     properties:
     - dataeier
