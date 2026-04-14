@@ -10,19 +10,9 @@ wms: https://arcgis002.miljodirektoratet.no/arcgis/services/artnasjonal3/MapServ
 layers:
 - arcgis: '2'
   wms:
-  - Alle_arter_av_sarlig_stor_forv_int_omr
-  - Alle_arter_av_sarlig_stor_forv_int_pkt
+  - verdsatte_arter_omr
+  - verdsatte_arter_pkt
   result_status: HIT-RED
-- arcgis: '1'
-  wms:
-  - Alle_arter_av_sarlig_stor_forv_int_pkt
-  - Alle_arter_av_sarlig_stor_forv_int_omr
-  result_status: HIT-RED
-properties:
-- AntallObservasjoner
-- Gruppe
-- NorskNavn
-- Status
-- Faktaark
+properties: (*)
 themes:
 - Natur
