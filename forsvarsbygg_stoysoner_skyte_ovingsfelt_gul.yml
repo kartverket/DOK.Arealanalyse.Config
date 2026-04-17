@@ -1,15 +1,15 @@
 ---
-disabled: true
 
 type: dataset
 config_id: 527be238-56b4-44c5-8fc5-a96e68b36279
 name: stoysoner_forsvarets_skyte_ovingsfelt_gul
 
 metadata_id: 21d93ab2-868f-4ef9-986b-bf362746f4bd
-# wfs: TODO - mangler WFS for stoyskytebane (kun WMS publisert)
+wfs: https://wfs.geonorge.no/skwms1/wfs.stoy_skytebane
 wms: https://wms.geonorge.no/skwms1/wms.stoyskytebane
 layers:
-  - wms:
+  - wfs: Støy
+    wms:
       - stoyskytebane
     filter: '"støysonekategori" = ''G'''
     result_status: HIT-YELLOW

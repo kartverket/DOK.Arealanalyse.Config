@@ -1,0 +1,18 @@
+---
+type: dataset
+config_id: fac458bc-c7e0-4d23-8bcd-616abc179c3e
+name: forsvarets_skyte_ovingsfelt_land
+
+metadata_id: 3d0fe246-ae76-4e88-af1f-c0b0405e83c1
+wfs: https://wfs.geonorge.no/skwms1/wfs.forsvarets_skyteogovingsfelt
+wms: https://wms.geonorge.no/skwms1/wms.skytefelt
+layers:
+  - wfs: SkyteOgØvingsfelt
+    wms:
+      - Skytefelt
+    result_status: HIT-RED
+    planning_guidance_id: 7519171f-76c6-4307-a1ec-1ff9b4464867
+geom_field: område
+properties: (*)
+themes:
+  - Samfunnssikkerhet
