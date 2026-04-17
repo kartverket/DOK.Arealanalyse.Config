@@ -1,0 +1,17 @@
+---
+type: dataset
+config_id: 60872015-79ae-42c1-ae9d-ff468b47e9f4
+name: militere_forbudsomrader_sjo
+
+metadata_id: 35ef918f-ecb2-47ac-953b-1479dc5579c9
+wfs: https://wfs.geonorge.no/skwms1/wfs.militereforbudsomradersjo
+wms: https://wms.geonorge.no/skwms1/wms.militereforbudsomradersjo
+layers:
+  - wfs: MilitærtForbudsområdeSjø
+    wms:
+      - militereforbudsomradesjo
+    result_status: HIT-RED
+geom_field: område
+properties: (*)
+themes:
+  - Samfunnssikkerhet
