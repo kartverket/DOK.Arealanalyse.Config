@@ -5,8 +5,8 @@ config_id: 08a6057d-ab78-4114-b924-9d6e093d1a5b
 name: aktsomhetsomr_kvikkleireskred
 
 metadata_id: dabd2a2c-36d5-4ed7-a4c9-d49808a2b848 
-arcgis: https://nve.geodataonline.no/arcgis/rest/services/KvikkleireskredAktsomhet/MapServer/
-wms: https://nve.geodataonline.no/arcgis/services/KvikkleireskredAktsomhet/MapServer/WMSServer
+arcgis: https://kart.nve.no/enterprise/rest/services/KvikkleireskredAktsomhet/MapServer/
+wms: https://kart.nve.no/enterprise/services/KvikkleireskredAktsomhet/MapServer/WMSServer
 layers:
 - arcgis: '0'
   wms:

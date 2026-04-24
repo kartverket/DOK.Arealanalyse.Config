@@ -6,12 +6,12 @@ name: hensynssone_energianlegg
 
 metadata_id: 9f71a24b-9997-409f-8e42-ce6f0c62e073
 wfs: https://wfs.geonorge.no/skwms1/wfs.nettanlegg
-wms: https://nve.geodataonline.no/arcgis/services/Nettanlegg2/MapServer/WMSServer
+wms: https://kart.nve.no/enterprise/services/Nettanlegg4/MapServer/WMSServer
 layers:
 - wfs: EL_Luftlinje
   wms:
   - Distribusjonsnett
-  - Regionalnett
+  - Regionalnett_luftledning46171
   result_status: HIT-RED
   planning_guidance_id: cc04ba06-1ad4-40cc-b961-389786a269ad
 geom_field: linje
