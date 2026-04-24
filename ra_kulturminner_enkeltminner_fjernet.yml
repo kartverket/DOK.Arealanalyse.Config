@@ -19,15 +19,6 @@ layers:
   building_guidance_id: 87969cd5-ed0c-431c-a9bd-08d2e634a316
   filter: vernetype = 'FJE' AND enkeltminnekategori IN ('E-ARK', 'E-BER', 'E-MAR', 'E-RUI')
 geom_field: område
-properties:
-- navn
-- kulturminneId
-- vernelov
-- verneparagraf
-- vernetype
-- vernedato
-- enkeltminnekategori
-- linkAskeladden
-- linkKulturminnesøk
+properties: (*)
 themes:
 - Kulturminner
