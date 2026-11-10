@@ -50,7 +50,7 @@ layers:
 ```
 
 ```yml
-ogc_api: https://api.ra.no/LokaliteterEnkeltminnerOgSikringssoner/collections
+ogc_api: https://api.ra.no/LokaliteterEnkeltminnerOgSikringssoner
 wms: https://kart.ra.no/wms/kulturminner
 layers:
 - ogc_api: enkeltminner
