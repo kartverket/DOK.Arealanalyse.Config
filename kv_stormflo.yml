@@ -44,5 +44,5 @@ indicators:
       layer: Dekningsområde
       geom_field: område
       property: dekningStatus
-      planning_building_id: 41d0f1be-4538-4eed-af15-ab3984cf49bd
+      building_guidance_id: 41d0f1be-4538-4eed-af15-ab3984cf49bd
       planning_guidance_id: 41d0f1be-4538-4eed-af15-ab3984cf49bd
