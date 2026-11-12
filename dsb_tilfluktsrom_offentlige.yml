@@ -5,10 +5,12 @@ name: tilfluktsrom_offentlige
 title: Tilfluktsrom - offentlige
 
 metadata_id: dbae9aae-10e7-4b75-8d67-7f0e8828f3d8
-wfs: https://wfs.geonorge.no/skwms1/wfs.tilfluktsrom_offentlige
+features:
+  type: wfs
+  url: https://wfs.geonorge.no/skwms1/wfs.tilfluktsrom_offentlige
 wms: https://ogc.dsb.no/wms.ashx
 layers:
-  - wfs: Tilfluktsrom
+  - feature: Tilfluktsrom
     wms:
       - layer_340
     result_status: HIT-RED

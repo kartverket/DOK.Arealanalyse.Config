@@ -4,14 +4,15 @@ config_id: 97088cff-d5a9-4328-9e3e-5abfb8dcc918
 name: reguleringsplaner
 
 metadata_id: dac27348-5c2e-4a6a-9497-c4c792108cae
-ogc_api:
+features:
+  type: ogc_api
   url: https://nap.ft.dibk.no/services/rest/reguleringsplaner/vn2
   auth:
     username: ${NAP_USERNAME}
     password: ${NAP_PASSWORD}
 wms: https://nap.ft.dibk.no/services/wms/reguleringsplaner
 layers:
-  - ogc_api: rpomrade
+  - feature: rpomrade
     wms:
       - vertikalniva_2
     result_status: HIT-RED

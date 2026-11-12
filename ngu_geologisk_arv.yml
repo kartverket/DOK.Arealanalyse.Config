@@ -5,7 +5,7 @@ name: geologisk_arv
 disabled: true
 
 metadata_id: 52a55a3c-bcd2-44d7-ac21-2f4550161937
-# vektor: mangler offentlig WFS/OGC API. Når NGU åpner for uttrekk, sett wfs/ogc_api her.
+# vektor: mangler offentlig WFS/OGC API. Når NGU åpner for uttrekk, sett features her.
 wms: https://geo.ngu.no/mapserver/GeologiskarvWMS2
 layers:
 - wms:
@@ -29,7 +29,8 @@ indicators:
   quality_dimension_name: Fullstendighetsdekning
   quality_warning_text: Området har ikke dekning for geologisk arv
   warning_threshold: Ikke kartlagt
-  geojson:
+  features:
+    type: geojson
     url: https://testnedlasting.geonorge.no/geonorge/Basisdata/DOKFullstendighetsdekningskart/Kartkatalogen/dekning_geologisk_arv.geojson
     property: dekningsstatus
     properties:

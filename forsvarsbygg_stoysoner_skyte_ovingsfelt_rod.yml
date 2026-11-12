@@ -5,10 +5,12 @@ config_id: c0916093-aa27-42da-9433-99a0e56e0d74
 name: stoysoner_forsvarets_skyte_ovingsfelt_rod
 
 metadata_id: 21d93ab2-868f-4ef9-986b-bf362746f4bd
-wfs: https://wfs.geonorge.no/skwms1/wfs.stoy_skytebane
+features:
+  type: wfs
+  url: https://wfs.geonorge.no/skwms1/wfs.stoy_skytebane
 wms: https://wms.geonorge.no/skwms1/wms.stoyskytebane
 layers:
-  - wfs: Støy
+  - feature: Støy
     wms:
       - stoyskytebane
     filter: '"støysonekategori" = ''R'''
@@ -32,7 +34,8 @@ indicators:
     quality_dimension_name: Fullstendighetsdekning
     quality_warning_text: Området har ikke dekning for støysoner skyte- og øvingsfelt
     warning_threshold: Ikke kartlagt
-    geojson:
+    features:
+      type: geojson
       url: https://testnedlasting.geonorge.no/geonorge/Basisdata/DOKFullstendighetsdekningskart/Kartkatalogen/dekning_stoysoner_skyte_og_ovingsfelt.geojson
       property: dekningsstatus
       properties:

@@ -5,10 +5,12 @@ name: fiskerihavn
 disabled: true
 
 metadata_id: fabfe189-06b5-4a3f-84ba-3c48b02ce6de
-wfs: https://services.kystverket.no/wfs.ashx
+features:
+  type: wfs
+  url: https://services.kystverket.no/wfs.ashx
 wms: https://services.kystverket.no/wms.ashx
 layers:
-  - wfs: layer_503
+  - feature: layer_503
     wms:
       - group_3
     result_status: HIT-RED
@@ -30,7 +32,8 @@ indicators:
     quality_dimension_name: Fullstendighetsdekning
     quality_warning_text: Området er ikke kartlagt for fiskerihavn.
     warning_threshold: Ikke kartlagt
-    gpkg:
+    features:
+      type: gpkg
       url: https://testnedlasting.geonorge.no/geonorge/Basisdata/DOKFullstendighetsdekningskart/GPKG/Dekning_fiskerihavner.gpkg
       property: dekningsstatus
       properties:

@@ -4,10 +4,12 @@ config_id: 39d0c3ce-0218-4f0a-b377-baebfb1156a0
 name: stoysoner_jernbanenett_gul
 
 metadata_id: 47234f63-a9d1-43c7-b91c-db90c92d5008
-wfs: https://wfs.geonorge.no/skwms1/wfs.stoysonerjernbanenett
+features:
+  type: wfs
+  url: https://wfs.geonorge.no/skwms1/wfs.stoysonerjernbanenett
 wms: https://wms.geonorge.no/skwms1/wms.stoysonerjernbanenett
 layers:
-  - wfs: Støy
+  - feature: Støy
     wms:
       - stoy
     filter: '"støysonekategori" = ''G'''

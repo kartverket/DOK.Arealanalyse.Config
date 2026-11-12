@@ -6,10 +6,12 @@ name: referanseruter
 disabled: true
 
 metadata_id: 25b83fc1-f2bd-4052-bd2d-bd949ac0f402
-wfs: TODO - har ikke
+features:
+  type: wfs
+  url: TODO - har ikke
 wms: TODO - har ikke
 layers:
-- wfs: Referanseruter
+- feature: Referanseruter
   wms:
   - referanseruter
   result_status: HIT-RED

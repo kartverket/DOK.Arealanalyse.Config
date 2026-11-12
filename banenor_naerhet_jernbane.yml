@@ -4,10 +4,12 @@ config_id: 6e7a7ec1-e5ba-4a79-ae7e-5cad377f3971
 name: naerhet_jernbane
 
 metadata_id: 3165138f-1461-44fe-8b10-eac44e08a10a
-wfs: https://wfs.geonorge.no/skwms1/wfs.banenettverk
+features:
+  type: wfs
+  url: https://wfs.geonorge.no/skwms1/wfs.banenettverk
 wms: https://wms.geonorge.no/skwms1/wms.banenettverk
 layers:
-- wfs: Banelenke
+- feature: Banelenke
   wms:
   - banelenke_medium
   result_status: HIT-RED

@@ -4,10 +4,12 @@ config_id: 864d00cf-cb14-4926-b06d-60329eb7f016
 name: flomsoner
 
 metadata_id: e95008fc-0945-4d66-8bc9-e50ab3f50401
-wfs: https://wfs.geonorge.no/skwms1/wfs.flomsoner
+features:
+  type: wfs
+  url: https://wfs.geonorge.no/skwms1/wfs.flomsoner
 wms: https://nve.geodataonline.no/arcgis/services/Flomsoner1/MapServer/WMSServer
 layers:
-  - wfs: FlomAreal
+  - feature: FlomAreal
     wms:
       - Flomsone_20arsflom
       - Flomsone_200arsflom
@@ -32,7 +34,8 @@ indicators:
     quality_dimension_name: Fullstendighetsdekning
     quality_warning_text: Området er ikke kartlagt for flomsoner
     warning_threshold: ikkeKartlagt
-    geojson:
+    features:
+      type: geojson
       url: https://testnedlasting.geonorge.no/geonorge/Basisdata/DOKFullstendighetsdekningskart/Kartkatalogen/dekning_flomsoner.geojson
       property: dekningsstatus
       properties:

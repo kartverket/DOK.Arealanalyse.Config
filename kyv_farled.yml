@@ -4,10 +4,12 @@ config_id: 6fbe96e8-6015-46c4-aedf-0e0d751d76fb
 name: farled
 
 metadata_id: 1e8d7811-87ea-429a-8d97-4ea6bbf6e010
-wfs: https://wfs.geonorge.no/skwms1/wfs.farled
+features:
+  type: wfs
+  url: https://wfs.geonorge.no/skwms1/wfs.farled
 wms: https://services.kystverket.no/wms.ashx
 layers:
-  - wfs: HovedledOgBiledAreal
+  - feature: HovedledOgBiledAreal
     wms:
       - group_4
     result_status: HIT-RED
@@ -26,7 +28,8 @@ indicators:
     quality_dimension_name: Fullstendighetsdekning
     quality_warning_text: Området er ikke kartlagt for hovedled og biled arealgrense.
     warning_threshold: Ikke kartlagt
-    gpkg:
+    features:
+      type: gpkg
       url: https://testnedlasting.geonorge.no/geonorge/Basisdata/DOKFullstendighetsdekningskart/GPKG/Dekning_hovedled_biled_arealgrense.gpkg
       property: dekningsstatus
       properties:

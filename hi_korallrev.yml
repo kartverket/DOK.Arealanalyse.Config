@@ -4,10 +4,12 @@ config_id: be4cadfc-7bff-4f51-a4d5-911b39bef8d6
 name: korallrev
 
 metadata_id: 31edb985-138e-46a7-a910-a0c1cd9baf4c
-wfs: https://kart.hi.no/mareano/mareano_biologi/korallrev_observert_rev/ows
+features:
+  type: wfs
+  url: https://kart.hi.no/mareano/mareano_biologi/korallrev_observert_rev/ows
 wms: https://kart.hi.no/mareano/mareano_biologi/korallrev_observert_rev/ows
 layers:
-  - wfs: mareano_biologi:korallrev_observert_rev
+  - feature: mareano_biologi:korallrev_observert_rev
     wms:
       - mareano_biologi:korallrev_observert_rev
     result_status: HIT-RED

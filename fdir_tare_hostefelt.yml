@@ -4,10 +4,12 @@ config_id: 3dc4b8de-fa22-4694-8947-68a133bdd47f
 name: tare_hostefelt
 
 metadata_id: 4d0bd656-640b-4592-be35-e7435aa313dc
-wfs: https://gis.fiskeridir.no/server/services/FiskeridirWFS_fiskeri/MapServer/WFSServer
+features:
+  type: wfs
+  url: https://gis.fiskeridir.no/server/services/FiskeridirWFS_fiskeri/MapServer/WFSServer
 wms: https://gis.fiskeridir.no/server/services/fiskeridirWMS_fiskeri/MapServer/WMSServer
 layers:
-  - wfs: tare_hostefelt
+  - feature: tare_hostefelt
     wms:
       - tare_høstefelt
     result_status: HIT-YELLOW

@@ -4,10 +4,12 @@ config_id: c0d28154-1d0c-4d86-8b65-091588c3eb27
 name: mulig_marin_leire
 
 metadata_id: 641a81c2-9354-473b-b8f0-2b1e2ab3930a
-ogc_api: https://geo.ngu.no/api/features/muligmarinleire
+features:
+  type: ogc_api
+  url: https://geo.ngu.no/api/features/muligmarinleire
 wms: https://geo.ngu.no/mapserver/MarinGrenseWMS4
 layers:
-- ogc_api: muligmarinleireflate
+- feature: muligmarinleireflate
   wms:
   - Mulig_marin_leire
   result_status: HIT-RED

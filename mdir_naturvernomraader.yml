@@ -5,10 +5,12 @@ config_id: 52c83a47-8a84-4962-839f-87418c124262
 name: naturvernområder
 
 metadata_id: 5857ec0a-8d2c-4cd8-baa2-0dc54ae213b4
-arcgis: https://kart.miljodirektoratet.no/arcgis/rest/services/vern/mapserver
+features:
+  type: arcgis
+  url: https://kart.miljodirektoratet.no/arcgis/rest/services/vern/mapserver
 wms: https://kart.miljodirektoratet.no/arcgis/services/vern/mapServer/WMSServer
 layers:
-- arcgis: '0'
+- feature: '0'
   wms:
   - naturvern_omrade
   result_status: HIT-RED

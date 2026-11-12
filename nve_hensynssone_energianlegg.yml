@@ -5,10 +5,12 @@ config_id: af961cfa-e0b2-4d4e-9560-f17913a7576c
 name: hensynssone_energianlegg
 
 metadata_id: 9f71a24b-9997-409f-8e42-ce6f0c62e073
-wfs: https://wfs.geonorge.no/skwms1/wfs.nettanlegg
+features:
+  type: wfs
+  url: https://wfs.geonorge.no/skwms1/wfs.nettanlegg
 wms: https://kart.nve.no/enterprise/services/Nettanlegg4/MapServer/WMSServer
 layers:
-- wfs: EL_Luftlinje
+- feature: EL_Luftlinje
   wms:
   - Distribusjonsnett
   - Regionalnett_luftledning46171

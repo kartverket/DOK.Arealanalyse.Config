@@ -4,10 +4,12 @@ config_id: 83356f63-ada8-437b-8cc9-ae8f73cf1a3b
 name: Grunnvannsborehull
 
 metadata_id: 82cd33ef-52dd-4c83-b2d6-e55a0941b33b
-ogc_api: https://geo.ngu.no/api/features/grunnvannborehull
+features:
+  type: ogc_api
+  url: https://geo.ngu.no/api/features/grunnvannborehull
 wms: https://geo.ngu.no/mapserver/GranadaWMS5
 layers:
-- ogc_api: grunnvannbronn
+- feature: grunnvannbronn
   wms:
   - Grunnvannsborehull
   result_status: HIT-RED

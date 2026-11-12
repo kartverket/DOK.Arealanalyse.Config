@@ -4,10 +4,12 @@ config_id: a39a8a5d-3fd3-4d0e-a634-bd70dae880ca
 name: radon_aktsomhet
 
 metadata_id: dc0605f3-2301-4abe-a91f-6da42464c281
-ogc_api: https://geo.ngu.no/api/features/radonaktsomhet
+features:
+  type: ogc_api
+  url: https://geo.ngu.no/api/features/radonaktsomhet
 wms: https://geo.ngu.no/mapserver/RadonWMS2
 layers:
-- ogc_api: radonaktsomhet
+- feature: radonaktsomhet
   wms:
   - Radon_aktsomhet
   result_status: HIT-RED

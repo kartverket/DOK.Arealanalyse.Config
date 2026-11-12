@@ -6,10 +6,12 @@ name: jord_flomskred_aktsomhets_omr
 disabled: true
 
 metadata_id: 30e1883e-70e9-4510-9e97-00edbdcddc02
-wfs: https://wfs.geonorge.no/skwms1/wfs.jord_og_flomskred_aktsomhetsomrader
+features:
+  type: wfs
+  url: https://wfs.geonorge.no/skwms1/wfs.jord_og_flomskred_aktsomhetsomrader
 wms: https://nve.geodataonline.no/arcgis/services/SkredJordFlomAktR1/MapServer/WMSServer
 layers:
-- wfs: PotensieltSkredfareOmr
+- feature: PotensieltSkredfareOmr
   wms:
   - Potensielt_Jord-Flomskredfare
   result_status: HIT-YELLOW
@@ -33,7 +35,8 @@ indicators:
   quality_dimension_name: Fullstendighetsdekning
   quality_warning_text: Området har ikke dekning for jord- og flomskred aktsomhetsområder
   warning_threshold: Ikke kartlagt
-  geojson:
+  features:
+    type: geojson
     url: https://testnedlasting.geonorge.no/geonorge/Basisdata/DOKFullstendighetsdekningskart/Kartkatalogen/dekning_aktsomhetskart_jord_flomskred.geojson
     property: dekningsstatus
     properties:

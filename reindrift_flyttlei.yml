@@ -4,10 +4,12 @@ config_id: 65781d32-805a-4d36-938b-c6b10ef54132
 name: reindrift_flyttlei
 
 metadata_id: f9c1e228-892f-4f1a-9e4e-b6d6149f373c
-wfs: https://wfs02.nibio.no/cgi-bin/rein/flyttlei
+features:
+  type: wfs
+  url: https://wfs02.nibio.no/cgi-bin/rein/flyttlei
 wms: https://reindrift.nibio.no/cgi-bin/reindrift
 layers:
-  - wfs: Flyttlei
+  - feature: Flyttlei
     wms:
       - Flyttlei
     result_status: HIT-RED
@@ -29,7 +31,8 @@ indicators:
     quality_dimension_name: Fullstendighetsdekning
     quality_warning_text: Området har ikke dekning for reindrift flyttlei
     warning_threshold: Ikke kartlagt
-    geojson:
+    features:
+      type: geojson
       url: https://testnedlasting.geonorge.no/geonorge/Basisdata/DOKFullstendighetsdekningskart/Kartkatalogen/dekning_flyttlei.geojson
       property: dekningsstatus
       properties:

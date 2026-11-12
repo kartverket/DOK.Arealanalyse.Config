@@ -6,10 +6,12 @@ config_id: df4d09fa-86bd-4efa-bbdf-39d5d7e65840
 name: steinsprang_aktsomhets_omr
 
 metadata_id: 02c6d51c-4e8c-4948-a620-dc046c8cb747
-wfs: https://wfs.geonorge.no/skwms1/wfs.steinsprang_aktsomhetsomrader
+features:
+  type: wfs
+  url: https://wfs.geonorge.no/skwms1/wfs.steinsprang_aktsomhetsomrader
 wms: https://kart.nve.no/enterprise/services/SkredSteinAktR/MapServer/WMSServer
 layers:
-- wfs: PotensieltSkredfareOmr
+- feature: PotensieltSkredfareOmr
   wms:
   - Steinsprang-AktsomhetOmrader
   result_status: HIT-YELLOW
@@ -33,7 +35,8 @@ indicators:
   quality_dimension_name: Fullstendighetsdekning
   quality_warning_text: Området har ikke dekning for steinsprang aktsomhetsområder
   warning_threshold: Ikke kartlagt
-  geojson:
+  features:
+    type: geojson
     url: https://testnedlasting.geonorge.no/geonorge/Basisdata/DOKFullstendighetsdekningskart/Kartkatalogen/dekning_steinsprang_aktsomhetsomr.geojson
     property: dekningsstatus
     properties:

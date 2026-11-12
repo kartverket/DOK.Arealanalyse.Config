@@ -4,10 +4,12 @@ config_id: 9f73482c-e1be-44b8-8efd-6eea93b075e7
 name: sefrak_bygninger_status_1_2
 
 metadata_id: 93f06149-037c-48cf-b294-d166f65b6838
-ogc_api: https://api.ra.no/KulturminnerSEFRAKbygninger
+features:
+  type: ogc_api
+  url: https://api.ra.no/KulturminnerSEFRAKbygninger
 wms: https://kart.ra.no/wms/sefrak
 layers:
-- ogc_api: sefrakbygninger
+- feature: sefrakbygninger
   wms:
   - SefrakBygninger
   filter: sefrakStatus IN (1, 2)

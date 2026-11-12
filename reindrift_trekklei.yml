@@ -5,10 +5,12 @@ config_id: d1b8ace8-18c8-43e6-86f7-858b6d4d2a2e
 name: reindrift_trekklei
 
 metadata_id: 95b0d396-a6fe-462b-8753-120efd0b60f3
-wfs: https://wfs02.nibio.no/cgi-bin/rein/trekklei
+features:
+  type: wfs
+  url: https://wfs02.nibio.no/cgi-bin/rein/trekklei
 wms: https://reindrift.nibio.no/cgi-bin/reindrift
 layers:
-- wfs: Trekklei
+- feature: Trekklei
   wms:
   - Trekklei
   result_status: HIT-RED
@@ -30,7 +32,8 @@ indicators:
   quality_dimension_name: Fullstendighetsdekning
   quality_warning_text: Området har ikke dekning for reindrift trekklei
   warning_threshold: Ikke kartlagt
-  geojson:
+  features:
+    type: geojson
     url: https://testnedlasting.geonorge.no/geonorge/Basisdata/DOKFullstendighetsdekningskart/Kartkatalogen/dekning_reindrift_trekklei.geojson
     property: dekningsstatus
     properties:

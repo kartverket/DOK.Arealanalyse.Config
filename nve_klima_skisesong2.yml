@@ -5,10 +5,12 @@ name: skisesong_framtidsperiode_2071_2100_færreskidager
 disabled: true
 
 metadata_id: 073b334a-5778-46b4-906d-d28427821ecd
-wfs: https://test-gisapp.nve.no/arcgis/services/featureservice/KSS_sno_klimaframskrivninger/MapServer/WFSServer
+features:
+  type: wfs
+  url: https://test-gisapp.nve.no/arcgis/services/featureservice/KSS_sno_klimaframskrivninger/MapServer/WFSServer
 wms: https://test-gisapp.nve.no/arcgis/services/featureservice/KSS_sno_klimaframskrivninger/MapServer/WMSServer
 layers:
-  - wfs: skisesong_framtidsperiode_2071_2100
+  - feature: skisesong_framtidsperiode_2071_2100
     wms:
       - "0"
     filter: label IN ('< -90', '-90 - -60')

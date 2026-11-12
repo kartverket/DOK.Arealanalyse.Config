@@ -4,10 +4,12 @@ config_id: d02c0fa1-0439-4f16-8040-10527c362f85
 name: lassettingsplasser
 
 metadata_id: fb59846b-edb3-4631-ba85-90dd0193e3be
-wfs: https://wfs.geonorge.no/skwms1/wfs.lassettingsplasser
+features:
+  type: wfs
+  url: https://wfs.geonorge.no/skwms1/wfs.lassettingsplasser
 wms: https://gis.fiskeridir.no/server/services/fiskeridirWMS_fiskeri/MapServer/WMSServer
 layers:
-  - wfs: Låssettingsplass
+  - feature: Låssettingsplass
     wms:
       - laassettingsplasser
     result_status: HIT-RED
@@ -30,7 +32,8 @@ indicators:
     quality_dimension_name: Fullstendighetsdekning
     quality_warning_text: Området er ikke kartlagt for låssettingsplasser
     warning_threshold: Ikke kartlagt
-    geojson:
+    features:
+      type: geojson
       url: https://testnedlasting.geonorge.no/geonorge/Basisdata/DOKFullstendighetsdekningskart/Kartkatalogen/dekning_lassettingsplasser.geojson
       property: dekningsstatus
       properties:

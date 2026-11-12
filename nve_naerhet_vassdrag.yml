@@ -5,7 +5,7 @@ name: naerhet_vassdrag
 disabled: true
 
 metadata_id: 595e47d9-d201-479c-a77d-cbc1f573a76b
-# wfs: TODO - mangler WFS for FKB-Vann
+# features: TODO - mangler WFS for FKB-Vann
 wms: https://wms.geonorge.no/skwms1/wms.fkb
 layers:
 - wms:
