@@ -5,10 +5,12 @@ name: navigasjonsinstallasjon
 disabled: true
 
 metadata_id: 94b8c392-e2c8-426a-8dbe-ae828049a1df
-wfs: https://nfs.kystverket.no/arcgis/services/nfs/NFSSistOperativ/MapServer/WFSServer
+features:
+  type: wfs
+  url: https://nfs.kystverket.no/arcgis/services/nfs/NFSSistOperativ/MapServer/WFSServer
 wms: https://nfs.kystverket.no/arcgis/services/nfs/NFSSistOperativ/MapServer/WMSServer
 layers:
-  - wfs: Lys
+  - feature: Lys
     # ønsker liste med flere lag Lys,IB,Sektorlinje,Lyssektor,Racon,Fastsjømerke,Flytendemerke,Overettlinje__lys,Overettlinje__merke
     wms:
       - NAVIGASJONSINSTALLASJONER

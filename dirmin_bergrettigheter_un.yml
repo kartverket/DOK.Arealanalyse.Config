@@ -4,10 +4,12 @@ config_id: 5f847646-4166-40a1-9db5-02a1317922f0
 name: bergrettigheter_undersøkelsesrett
 
 metadata_id: b3c319bd-910d-4663-8ce8-23a246afe879
-wfs: https://wfs.geonorge.no/skwms1/wfs.bergrettigheter
+features:
+  type: wfs
+  url: https://wfs.geonorge.no/skwms1/wfs.bergrettigheter
 wms: https://kart.dirmin.no/dirmin/services/Bergrettigheter/MapServer/WmsServer
 layers:
-  - wfs: Bergrettighet
+  - feature: Bergrettighet
     wms:
       - Bergrettigheter
     filter: servituttType = 'UN'

@@ -4,10 +4,12 @@ config_id: 16a03cf3-b1cd-47a6-95f0-1cd14886e258
 name: jord_flomskred_aktsomhets_omr
 
 metadata_id: 30e1883e-70e9-4510-9e97-00edbdcddc02
-wfs: https://wfs.geonorge.no/skwms1/wfs.aktsomhetskartforjordogflomskred
+features:
+  type: wfs
+  url: https://wfs.geonorge.no/skwms1/wfs.aktsomhetskartforjordogflomskred
 wms: https://kart.nve.no/enterprise/services/JordFlomskredAktsomhet/MapServer/WMSServer
 layers:
-  - wfs: AktsomhetsOmrJordOgFlomskred
+  - feature: AktsomhetsOmrJordOgFlomskred
     wms:
       - Jord_flomskred_aktsomhetsomrader58338
     result_status: HIT-YELLOW

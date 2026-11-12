@@ -4,10 +4,12 @@ config_id: 72599474-0ab7-4563-8d68-4fe330781d36
 name: flom_aktsomhets_omr
 
 metadata_id: 60c5024f-bf93-4d7a-888a-5fe001427195
-wfs: http://wfs.geonorge.no/skwms1/wfs.flomaktsomhetsomrader
+features:
+  type: wfs
+  url: http://wfs.geonorge.no/skwms1/wfs.flomaktsomhetsomrader
 wms: https://nve.geodataonline.no/arcgis/services/FlomAktsomhet/MapServer/WMSServer
 layers:
-  - wfs: FlomAktsomhetOmr
+  - feature: FlomAktsomhetOmr
     wms:
       - Flom_aktsomhetsomrade
     result_status: HIT-YELLOW

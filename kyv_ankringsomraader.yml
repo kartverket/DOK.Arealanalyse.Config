@@ -5,10 +5,12 @@ name: ankringsomraader
 disabled: true
 
 metadata_id: d6a20e09-fa68-4d57-ab43-c22e755ff60a
-wfs: https://services.kystverket.no/wfs.ashx
+features:
+  type: wfs
+  url: https://services.kystverket.no/wfs.ashx
 wms: https://services.kystverket.no/wms.ashx
 layers:
-  - wfs: layer_151
+  - feature: layer_151
     wms:
       - group_2
     result_status: HIT-RED

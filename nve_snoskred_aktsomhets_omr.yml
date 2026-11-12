@@ -5,10 +5,12 @@ name: snoskred_aktsomhets_omr
 disabled: true
 
 metadata_id: 54ada9d8-e6fc-48d6-82b0-5477166a4aaa
-wfs: https://wfs.geonorge.no/skwms1/wfs.snoskredaktsomhetsomrader
+features:
+  type: wfs
+  url: https://wfs.geonorge.no/skwms1/wfs.snoskredaktsomhetsomrader
 wms: https://nve.geodataonline.no/arcgis/services/SkredSnoAktR/MapServer/WMSServer
 layers:
-  - wfs: PotensieltSkredfareOmr
+  - feature: PotensieltSkredfareOmr
     wms:
       - Snoskred-Aktsomhetsomrader
     result_status: HIT-YELLOW

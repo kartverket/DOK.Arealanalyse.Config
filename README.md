@@ -39,21 +39,27 @@ name: naturtyper_ku_verdi
 ```
 ### Datakilde:
 Hvilken tjeneste eller API dataene hentes fra samt objekttyper/lag og geometrifelt som det søkes i. Tjenesten må støtte intersect.
+
+Tjenesten angis i `features`, der `type` er én av `wfs`, `arcgis` eller `ogc_api`. Under `layers` angir `feature` hvilken objekttype/lag i tjenesten det søkes i.
 ```yml
-arcgis: https://kart.miljodirektoratet.no/arcgis/rest/services/naturtyper_kuverdi/MapServer
+features:
+  type: arcgis
+  url: https://kart.miljodirektoratet.no/arcgis/rest/services/naturtyper_kuverdi/MapServer
 wms: https://kart.miljodirektoratet.no/arcgis/services/naturtyper_kuverdi/MapServer/WMSServer
 layers:
-- arcgis: '0'
+- feature: '0'
   wms:
   - kuverdi_svært_stor_verdi
   result_status: HIT-RED
 ```
 
 ```yml
-ogc_api: https://api.ra.no/LokaliteterEnkeltminnerOgSikringssoner/collections
+features:
+  type: ogc_api
+  url: https://api.ra.no/LokaliteterEnkeltminnerOgSikringssoner/collections
 wms: https://kart.ra.no/wms/kulturminner
 layers:
-- ogc_api: enkeltminner
+- feature: enkeltminner
   wms:
   - Enkeltminner
   result_status: HIT-RED
@@ -62,10 +68,12 @@ geom_field: område
 ```
 
 ```yml
-wfs: https://wfs.geonorge.no/skwms1/wfs.stormflo_havniva
+features:
+  type: wfs
+  url: https://wfs.geonorge.no/skwms1/wfs.stormflo_havniva
 wms: https://wms.geonorge.no/skwms1/wms.stormflo_havniva
 layers:
-- wfs: Stormflo20År_KlimaÅrNå
+- feature: Stormflo20År_KlimaÅrNå
   wms:
   - stormflo20ar_klimaarna
   result_status: HIT-RED
@@ -121,7 +129,7 @@ Det angis referanse til ID på aktuell veiledningstekst fra https://register.geo
 
 ```yml
 layers:
-- arcgis: '0'
+- feature: '0'
 
   result_status: HIT-RED
   planning_guidance_id: 9d803106-57f6-494e-bca8-67f1fd1f72a3
@@ -148,13 +156,16 @@ indicators:
   warning_threshold: Mindre god (> 50m)
 ```
 
+For dekningskart (`type: coverage`) angis kilden i `features`, der `type` er én av `wfs`, `arcgis`, `geojson` eller `gpkg`.
+
 ```yml
 - type: coverage
   quality_dimension_id: fullstendighet_dekning
   quality_dimension_name: Fullstendighetsdekning
   quality_warning_text: Området er ikke kartlagt for naturtyper
   warning_threshold: null
-  arcgis:
+  features:
+    type: arcgis
     url: https://kart.miljodirektoratet.no/arcgis/rest/services/naturtyper_nin/MapServer
     layer: '1'
     property: Dekningskartverdi
@@ -174,7 +185,8 @@ indicators:
   quality_dimension_name: Fullstendighetsdekning
   quality_warning_text: Området er ikke kartlagt for flomsoner
   warning_threshold: Ikke kartlagt
-  gpkg:
+  features:
+    type: gpkg
     url: file:///mnt/dokanalyse/geopackage/dekningskart_nve_flomsoner.gpkg
     property: dekningsstatus
     properties:
@@ -189,7 +201,8 @@ indicators:
   quality_dimension_name: Fullstendighetsdekning
   quality_warning_text: Området er ikke kartlagt for kvikkleireskred
   warning_threshold: Ikke kartlagt
-  geojson:
+  features:
+    type: geojson
     url: file:///mnt/dokanalyse/geojson/dekningskart_nve_aktsomhetsomr_kvikkleireskred.geojson
     property: dekningsstatus
     properties:

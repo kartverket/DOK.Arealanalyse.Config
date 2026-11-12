@@ -5,10 +5,12 @@ name: geotekniske_undersøkelser
 title: Geotekniske undersøkelser
 
 metadata_id: bf45a463-434d-4b4d-84dc-9325780ab5fb
-ogc_api: https://ogcapitest.ngu.no/rest/services/grunnundersokelser_utvidet
+features:
+  type: ogc_api
+  url: https://ogcapitest.ngu.no/rest/services/grunnundersokelser_utvidet
 wms: https://geo.ngu.no/geoserver/nadag/ows
 layers:
-  - ogc_api: geotekniskunders
+  - feature: geotekniskunders
     wms:
       - GB_filter_komplette_data
     result_status: HIT-YELLOW

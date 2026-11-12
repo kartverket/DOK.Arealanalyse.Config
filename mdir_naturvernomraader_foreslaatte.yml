@@ -4,10 +4,12 @@ config_id: 3a220fd3-2aa3-4c34-89aa-b41c07f6564d
 name: naturvernområder_foreslåtte
 
 metadata_id: 0e7eb17f-35ef-46d3-a465-3112d8bb2b5e
-arcgis: https://kart.miljodirektoratet.no/arcgis/rest/services/vern/mapserver
+features:
+  type: arcgis
+  url: https://kart.miljodirektoratet.no/arcgis/rest/services/vern/mapserver
 wms: https://kart.miljodirektoratet.no/arcgis/services/vern/mapServer/WMSServer
 layers:
-  - arcgis: "4"
+  - feature: "4"
     wms:
       - foreslatt_naturvern_omrade
     result_status: HIT-RED
